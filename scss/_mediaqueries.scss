@@ -1,0 +1,23 @@
+// variables ****************/
+
+$break-small: 320px;
+$break-medium: 800px;
+$break-large: 1200px;
+// Mixin ****************************************************************************
+@mixin breakpoint($point) {
+    @if $point==small {
+        @media (max-width: 320px) {
+            @content;
+        }
+    }
+    @else if $point==medium {
+        @media (min-width: 321px) {
+            @content;
+        }
+    }
+    @else if $point==large {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+}
