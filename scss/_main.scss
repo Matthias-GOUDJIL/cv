@@ -11,7 +11,7 @@ html {
     body {
         header {
             background-color: rgb(240, 240, 240);
-            #menu-toggler {
+            #menu_toggler {
                 display: block;
                 border: none;
                 background-color: transparent;
@@ -29,7 +29,7 @@ html {
                     display: none;
                 }
             }
-            .menu-nav {
+            #menu_nav {
                 background-color: rgb(255, 255, 255);
                 @include breakpoint (large) {
                     display: block;
@@ -110,7 +110,7 @@ html {
                 }
             }
         } //header
-        .actus {
+        #actus {
             background-color: rgb(240, 248, 255);
             display: flex;
             flex-flow: column wrap;
@@ -124,7 +124,7 @@ html {
                 } //include
             }
         } //actus
-        .skills {
+        #skills {
             background-color: rgba(240, 248, 255, 0.795);
             .skills-container {
                 display: flex;
@@ -160,12 +160,12 @@ html {
                 }
             }
         } //skills
-        .achievements {}
+        #achievements {}
         //achievements
-        .about {}
+        #about {}
         //about
         footer {
-            .contact {}
+            #contact {}
             //contact
         } //footer
     } //body
@@ -213,3 +213,11 @@ ul {
 a {
     text-decoration: none;
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  

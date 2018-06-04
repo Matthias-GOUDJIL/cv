@@ -25,31 +25,31 @@
     <header>
 
         <!-- Navigation-toggler-->
-        <button id="menu-toggler" class="hide" type="button">
+        <button id="menu_toggler" class="hide" type="button">
             <i class="fas fa-bars"></i>
         </button>
 
         <!-- Navigation -->
-        <nav class="menu-nav">
+        <nav id="menu_nav">
             <ul class="menu-content">
-                <li id="home" class="menu-items">
-                    <a class="menu-link" href="">
+                <li  id="home" class="menu-items">
+                    <a  class="menu-link" href="#home">
                         <i class="fas fa-home"></i>accueil</a>
                 </li>
-                <li id="skills" class="menu-items">
-                    <a class="menu-link" href="">
+                <li class="menu-items">
+                    <a class="menu-link" href="#skills">
                         <i class="fas fa-cogs"></i>compétences</a>
                 </li>
-                <li id="achievements" class="menu-items">
-                    <a class="menu-link" href="">
+                <li class="menu-items">
+                    <a class="menu-link" href="#achievements">
                         <i class="far fa-lightbulb"></i>réalisations</a>
                 </li>
-                <li id="about" class="menu-items">
-                    <a class="menu-link" href="">
+                <li class="menu-items">
+                    <a class="menu-link" href="#about">
                         <i class="fas fa-info-circle"></i>a propos</a>
                 </li>
-                <li id="contact" class="menu-items">
-                    <a class="menu-link" href="">
+                <li class="menu-items">
+                    <a class="menu-link" href="#contact">
                         <i class="far fa-envelope"></i>contact</a>
                 </li>
             </ul>
@@ -75,7 +75,7 @@
     </header>
     <div class="parallax"></div>
 
-    <section class="actus">
+    <section id="actus">
         <h1>actualités</h1>
         <div class="actus-container">
             <p>En cours de formation
@@ -92,7 +92,7 @@
 
     </section>
 
-    <section class="skills ">
+    <section id="skills">
         <h1>compétences</h1>
         <div class="skills-container ">
 
@@ -130,21 +130,24 @@
         </div>
     </section>
 
-    <section class="achievements">
+    <section id="achievements">
 
     </section>
 
-    <section class="about">
+    <section id="about">
 
     </section>
 
     <footer>
-        <section class="contact">
+        <section id="contact">
 
         </section>
     </footer>
 
+    <script src="js/jquery3-3.3.1.min.js"></script>
     <script src="js/menu_toggler.js"></script>
+    <script src="js/smooth_scroll.js"></script>
+    <script src="js/menu_scroll.js"></script>
 </body>
 
 </html>

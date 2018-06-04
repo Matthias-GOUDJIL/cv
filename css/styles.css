@@ -1,8 +1,7 @@
 * {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -11,7 +10,7 @@ html body header {
   background-color: #f0f0f0;
 }
 
-html body header #menu-toggler {
+html body header #menu_toggler {
   display: block;
   border: none;
   background-color: transparent;
@@ -20,87 +19,75 @@ html body header #menu-toggler {
   padding: 0.5rem;
 }
 
-html body header #menu-toggler:link, html body header #menu-toggler:visited, html body header #menu-toggler:hover, html body header #menu-toggler:active, html body header #menu-toggler:focus {
+html body header #menu_toggler:link, html body header #menu_toggler:visited, html body header #menu_toggler:hover, html body header #menu_toggler:active, html body header #menu_toggler:focus {
   outline: 0 !important;
 }
 
 @media (min-width: 768px) {
-  html body header #menu-toggler {
+  html body header #menu_toggler {
     display: none;
   }
 }
 
-html body header .menu-nav {
+html body header #menu_nav {
   background-color: white;
 }
 
 @media (min-width: 768px) {
-  html body header .menu-nav {
+  html body header #menu_nav {
     display: block;
   }
 }
 
-html body header .menu-nav .menu-content {
+html body header #menu_nav .menu-content {
   border-top: 5px solid aliceblue;
   border-bottom: 5px solid aliceblue;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-flow: column wrap;
+  align-items: flex-start;
 }
 
 @media (min-width: 768px) {
-  html body header .menu-nav .menu-content {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+  html body header #menu_nav .menu-content {
+    flex-flow: row wrap;
   }
 }
 
-html body header .menu-nav .menu-content #home {
+html body header #menu_nav .menu-content #home {
   margin-right: auto;
 }
 
-html body header .menu-nav .menu-content .menu-items {
+html body header #menu_nav .menu-content .menu-items {
   margin: 1rem;
 }
 
 @media (min-width: 768px) {
-  html body header .menu-nav .menu-content .menu-items {
+  html body header #menu_nav .menu-content .menu-items {
     margin: 1rem 1.5rem;
   }
 }
 
-html body header .menu-nav .menu-content .menu-items .menu-link {
+html body header #menu_nav .menu-content .menu-items .menu-link {
   color: #424242;
   padding: 0.75rem 0;
 }
 
-html body header .menu-nav .menu-content .menu-items .menu-link:link, html body header .menu-nav .menu-content .menu-items .menu-link:visited, html body header .menu-nav .menu-content .menu-items .menu-link:active, html body header .menu-nav .menu-content .menu-items .menu-link:focus {
+html body header #menu_nav .menu-content .menu-items .menu-link:link, html body header #menu_nav .menu-content .menu-items .menu-link:visited, html body header #menu_nav .menu-content .menu-items .menu-link:active, html body header #menu_nav .menu-content .menu-items .menu-link:focus {
   outline: 0 !important;
 }
 
-html body header .menu-nav .menu-content .menu-items .menu-link:hover {
+html body header #menu_nav .menu-content .menu-items .menu-link:hover {
   border-top: 3px solid #f38b62;
   border-bottom: 3px solid #f38b62;
 }
 
-html body header .menu-nav .menu-content .menu-items .menu-link i {
+html body header #menu_nav .menu-content .menu-items .menu-link i {
   width: 25px;
   font-size: 1rem;
   margin-right: 0.5rem;
 }
 
 html body header .header-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-image: url("/assets/images/Background_Blue.jpg");
   opacity: 0.85;
@@ -115,19 +102,10 @@ html body header .header-content .brand-container {
   border-bottom: 2.5px solid aliceblue;
   margin: auto;
   padding: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 html body header .header-content .brand-container .brand-name {
@@ -156,97 +134,66 @@ html body header .header-content .brand-container .chevron {
   color: #db4d4d;
 }
 
-html body .actus {
+html body #actus {
   background-color: aliceblue;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
 }
 
-html body .actus .actus-container {
+html body #actus .actus-container {
   padding: 0.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+  flex-flow: column wrap;
 }
 
 @media (min-width: 768px) {
-  html body .actus .actus-container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+  html body #actus .actus-container {
+    flex-flow: row wrap;
   }
 }
 
-html body .skills {
+html body #skills {
   background-color: rgba(240, 248, 255, 0.795);
 }
 
-html body .skills .skills-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
+html body #skills .skills-container {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-flow: column wrap;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
-  html body .skills .skills-container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+  html body #skills .skills-container {
+    flex-flow: row wrap;
   }
 }
 
-html body .skills .skills-container .skills-box {
+html body #skills .skills-container .skills-box {
   margin: 0.5rem 0;
   border-radius: 5px;
   color: aliceblue;
   background-color: tomato;
-  -webkit-box-shadow: 2px 2px 0 #424242;
-          box-shadow: 2px 2px 0 #424242;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-shadow: 2px 2px 0 #424242;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+  flex-flow: column wrap;
   padding: 1rem;
   font-size: 1rem;
   min-height: 50%;
 }
 
-html body .skills .skills-container .skills-box h3 {
+html body #skills .skills-container .skills-box h3 {
   text-decoration: underline;
   font-weight: 400;
   text-align: center;
 }
 
-html body .skills .skills-container .skills-box ul {
+html body #skills .skills-container .skills-box ul {
   padding: 1rem;
 }
 
 @media (min-width: 768px) {
-  html body .skills .skills-container .skills-box {
+  html body #skills .skills-container .skills-box {
     margin: 1rem;
     width: 45%;
     min-height: 50%;
@@ -296,5 +243,12 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 /*# sourceMappingURL=styles.css.map */
