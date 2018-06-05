@@ -12,13 +12,23 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
 
-    <!--  Custum stylesheets-->
+    <!-- Stylesheets-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="vendors/dist/jquery.bxslider.min.css">
     <link rel="stylesheet" href="dist/css/styles.min.css">
 
     <!--meta title & description-->
     <title>matthias goudjil | développeur web</title>
     <meta name="description" content="développeur web junior résidant en vendée.
     Création d'outils numériques (sites, applications web, stratégie de communication).">
+
+    <script src="js/jquery3-3.3.1.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/waypoints.js"></script>
+    <script src="js/menu_toggler.js"></script>
+    <script src="js/smooth_scroll.js"></script>
+    <script src="vendors/dist/jquery.bxslider.min.js"></script>
+    <script src="js/slider.js"></script>
 </head>
 
 <body>
@@ -56,7 +66,7 @@
         </nav>
 
         <div class="header-content">
-            <div class="brand-container">
+            <div class="animated swing brand-container">
                 <div>
                     <h1 class="brand-name">Matthias</h1>
                     <h1 class="brand-name">
@@ -73,64 +83,74 @@
         </div>
 
     </header>
-    <div class="parallax"></div>
+    <div class="laptop-parallax parallax"></div>
 
     <section id="actus">
         <h1>actualités</h1>
         <div class="actus-container">
             <p>En cours de formation
                 <strong>développeur web</strong> chez
-                <strong>ARINFO</strong> jusqu'au 03 août 2018.</p>
-            <p> Possibilité de poursuivre en
-                <strong>contrat de professionnalisation</strong> (à partir de septembre 2018 - durée: 1an): certification
-                <strong>"Designer Web"</strong> (titre professionnel de niveau III (bac +2) inscrit au RNCP).</p>
-            <p>Vous etes une entreprise ou une institution et êtes intéressée par les avantages de ce type de contrat?</p>
-            <p>N'hesitez pas à me contacter!</p>
-            <p>Formation labellisée
+                <strong>ARINFO*</strong> jusqu'au 03 août 2018.</p>
+            <p> Possibilité de poursuivre en <strong>contrat de professionnalisation</strong> (à partir de septembre 2018 - durée: 1an) débouchant sur une 
+            certification<strong>"Designer Web"</strong> (titre professionnel de niveau III (bac +2) inscrit au RNCP).</p>
+            <p>Vous etes une entreprise ou une institution et êtes intéressée par les avantages de ce type de contrat?</p> 
+            <button class="contact-btn" type=button>contactez-moi!</button>
+            <p class="note">*Formation labellisée
                 <strong>Grande Ecole du Numérique.</strong>
         </div>
 
     </section>
 
     <section id="skills">
-        <h1>compétences</h1>
-        <div class="skills-container ">
-
-            <div class="skills-box">
-
-                <h3>Création de sites et applications web modernes et responsives</h3>
-                <ul>
-                    <li>-langages: HTML5/CSS3, JavaScript(ES6)/jQuery, PHP5/7,</li>
-                    <li>-CMS et librairies utilisés: Wordpress, Prestashop, Bootstrap</li>
-                </ul>
-            </div>
-            <div class="skills-box">
-                <h3>Stratégie de communication et référencement</h3>
-                <ul>
-                    <li>-SEO naturel</li>
-                    <li>-campagne e-mailing</li>
-                    <li>-web design (illustrator, Photoshop)</li>
-                </ul>
-
-            </div>
-            <div class="skills-box">
-                <h3>environnement serveur, maintenance</h3>
-                <ul>
-                    <li>-mise en place environnement LAMP</li>
-                    <li>-maintenance de base (mises à jour, backups)</li>
-                    <li>-mise en place de l'hébergement, création de domaine, gestion de certificats SSL</li>
-                </ul>
-            </div>
-            <div class="skills-box">
-                <h3>Travail en équipe</h3>
-                <ul>
-                    <li>-methode SRUM Agile.</li>
-                </ul>
+        <div class="parallax skills-parallax" >
+            <h1>compétences</h1>
+            <div class="skills-container ">
+    
+                <div class="right skills-box">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Création de sites et applications web modernes et responsives</h3>
+                    <ul>
+                        <li>-langages: HTML5/CSS3, JavaScript(ES6)/jQuery, PHP5/7,</li>
+                        <li>-CMS et librairies: Wordpress, Prestashop, Bootstrap</li>
+                    </ul>
+                </div>
+                <div class="right skills-box">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>Stratégie de communication et référencement</h3>
+                    <ul>
+                        <li>-SEO naturel</li>
+                        <li>-campagne e-mailing</li>
+                        <li>-web design (illustrator, Photoshop)</li>
+                    </ul>
+    
+                </div>
+                <div class="left skills-box">
+                    <i class="fas fa-server"></i>
+                    <h3>environnement serveur, maintenance</h3>
+                    <ul>
+                        <li>-mise en place environnement LAMP</li>
+                        <li>-maintenance de base (mises à jour, backups)</li>
+                        <li>-mise en place de l'hébergement, création de domaines, gestion de certificats SSL</li>
+                    </ul>
+                </div>
+                <div class="left skills-box">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Travail en équipe</h3>
+                    <ul>
+                        <li>-methode SCRUM Agile.</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="achievements">
+        <h1>projets réalisés pendant ma formation</h1>
+        <div class="slider">
+            <div><img src="assets/images/italian-3328121_640.png" title="lorem" alt="lorem"></div>
+            <div><img src="assets/images/laptop.jpg" title="lorem" alt="lorem"></div>
+            <div><img src="assets/images/Background_Blue(www.TheWallpapers.org)(1920x1200).jpg" title="lorem" alt="lorem"></div>
+        </div>
 
     </section>
 
@@ -144,10 +164,8 @@
         </section>
     </footer>
 
-    <script src="js/jquery3-3.3.1.min.js"></script>
-    <script src="js/menu_toggler.js"></script>
-    <script src="js/smooth_scroll.js"></script>
-    <script src="js/menu_scroll.js"></script>
+    
+
 </body>
 
 </html>
