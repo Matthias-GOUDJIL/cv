@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <!-- Required meta tags -->
@@ -14,26 +14,17 @@
 
     <!-- Stylesheets-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="vendors/dist/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="vendors/bxslider/dist/jquery.bxslider.min.css">
     <link rel="stylesheet" href="dist/css/styles.min.css">
 
     <!--meta title & description-->
     <title>matthias goudjil | développeur web</title>
     <meta name="description" content="développeur web junior résidant en vendée.
     Création d'outils numériques (sites, applications web, stratégie de communication).">
-
-    <script src="js/jquery3-3.3.1.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/waypoints.js"></script>
-    <script src="js/menu_toggler.js"></script>
-    <script src="js/smooth_scroll.js"></script>
-    <script src="vendors/dist/jquery.bxslider.min.js"></script>
-    <script src="js/slider.js"></script>
 </head>
 
 <body>
     <header>
-
         <!-- Navigation-toggler-->
         <button id="menu_toggler" class="hide" type="button">
             <i class="fas fa-bars"></i>
@@ -42,29 +33,15 @@
         <!-- Navigation -->
         <nav id="menu_nav">
             <ul class="menu-content">
-                <li  id="home" class="menu-items">
-                    <a  class="menu-link" href="#home">
-                        <i class="fas fa-home"></i>accueil</a>
-                </li>
-                <li class="menu-items">
-                    <a class="menu-link" href="#skills">
-                        <i class="fas fa-cogs"></i>compétences</a>
-                </li>
-                <li class="menu-items">
-                    <a class="menu-link" href="#achievements">
-                        <i class="far fa-lightbulb"></i>réalisations</a>
-                </li>
-                <li class="menu-items">
-                    <a class="menu-link" href="#about">
-                        <i class="fas fa-info-circle"></i>a propos</a>
-                </li>
-                <li class="menu-items">
-                    <a class="menu-link" href="#contact">
-                        <i class="far fa-envelope"></i>contact</a>
-                </li>
+                <li  id="home" class="menu-items"><a  class="menu-link" href="#home"><i class="fas fa-home"></i>accueil</a></li>
+                <li class="menu-items"><a class="menu-link" href="#skills"><i class="fas fa-cogs"></i>compétences</a></li>
+                <li class="menu-items"><a class="menu-link" href="#achievements"><i class="far fa-lightbulb"></i>réalisations</a></li>
+                <li class="menu-items"><a class="menu-link" href="#about"><i class="fas fa-info-circle"></i>a propos</a></li>
+                <li class="menu-items"><a class="menu-link" href="#contact"><i class="far fa-envelope"></i>contact</a></li>
             </ul>
         </nav>
 
+        <!-- Header-content -->
         <div class="header-content">
             <div class="animated swing brand-container">
                 <div>
@@ -81,10 +58,12 @@
                 </div>
             </div>
         </div>
-
     </header>
+
+    <!-- Parallax -->
     <div class="laptop-parallax parallax"></div>
 
+    <!-- Section Actus -->
     <section id="actus">
         <h1>actualités</h1>
         <div class="actus-container">
@@ -98,14 +77,13 @@
             <p class="note">*Formation labellisée
                 <strong>Grande Ecole du Numérique.</strong>
         </div>
-
     </section>
 
+    <!-- Section Compétences -->
     <section id="skills">
         <div class="parallax skills-parallax" >
             <h1>compétences</h1>
             <div class="skills-container ">
-    
                 <div class="right skills-box">
                     <i class="fas fa-mobile-alt"></i>
                     <h3>Création de sites et applications web modernes et responsives</h3>
@@ -122,7 +100,6 @@
                         <li>-campagne e-mailing</li>
                         <li>-web design (illustrator, Photoshop)</li>
                     </ul>
-    
                 </div>
                 <div class="left skills-box">
                     <i class="fas fa-server"></i>
@@ -144,18 +121,19 @@
         </div>
     </section>
 
+    <!-- Section Portfolio -->
     <section id="achievements">
-        <h1>projets réalisés pendant ma formation</h1>
+        <h1>projets réalisés pendant la formation</h1>
         <div class="slider">
             <div><img src="assets/images/italian-3328121_640.png" title="lorem" alt="lorem"></div>
             <div><img src="assets/images/laptop.jpg" title="lorem" alt="lorem"></div>
             <div><img src="assets/images/Background_Blue(www.TheWallpapers.org)(1920x1200).jpg" title="lorem" alt="lorem"></div>
         </div>
-
     </section>
 
+    <!-- Section About -->
     <section id="about">
-
+        
     </section>
 
     <footer>
@@ -164,7 +142,14 @@
         </section>
     </footer>
 
-    
+     <!-- Scripts-->
+     <script src="js/jquery3-3.3.1.min.js"></script>
+     <script src="js/jquery.waypoints.min.js"></script>
+     <script src="js/waypoints.js"></script>
+     <script src="js/menu_toggler.js"></script>
+     <script src="js/smooth_scroll.js"></script>
+     <script src="vendors/bxslider/dist/jquery.bxslider.min.js"></script>
+     <script src="js/slider.js"></script>
 
 </body>
 

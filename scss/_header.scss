@@ -1,0 +1,105 @@
+header {
+    background-color: rgb(240, 240, 240);
+    #menu_toggler {
+        display: block;
+        border: none;
+        background-color: transparent;
+        color: rgb(243, 139, 98);
+        font-size: 1.8rem;
+        padding: 0.5rem;
+        &:link,
+        &:visited,
+        &:hover,
+        &:active,
+        &:focus {
+            outline: 0 !important;
+        }
+        @include breakpoint (large) {
+            display: none;
+        }//fin include
+    }//fin menu-toggler
+    #menu_nav {
+        background-color: rgb(255, 255, 255);
+        @include breakpoint (large) {
+            display: block;
+        } //fin include
+        .menu-content {
+            border-top: 5px solid aliceblue;
+            border-bottom: 5px solid aliceblue;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: flex-start;
+            @include breakpoint (large) {
+                flex-flow: row wrap;
+            } //fin include
+            #home {
+                margin-right: auto;
+            }
+            .menu-items {
+                margin: 1rem;
+                @include breakpoint (large) {
+                    margin: 1rem 1.5rem;
+                } //fin include
+                .menu-link {
+                    color: rgb(66, 66, 66);
+                    padding: 0.75rem 0;
+                    &:link,
+                    &:visited,
+                    &:active,
+                    &:focus {
+                        outline: 0 !important;
+                    }
+                    &:hover {
+                        border-top: 3px solid rgb(243, 139, 98);
+                        border-bottom: 3px solid rgb(243, 139, 98);
+                    }
+                    i {
+                        width: 25px;
+                        font-size: 1rem;
+                        margin-right: 0.5rem;
+                    }
+                } //fin menu-link
+            } //fin menu-items
+        } //fin menu-content
+    } //fin menu-nav
+    .header-content {
+        display: flex;
+        background-image: url("/assets/images/Background_Blue.jpg");
+        opacity: 0.85;
+        min-height: 45vh;
+        padding: 1rem;
+        .brand-container {
+            font-family: 'Inconsolata', monospace;
+            color: aliceblue;
+            border-top: 2.5px solid aliceblue;
+            border-bottom: 2.5px solid aliceblue;
+            margin: auto;
+            padding: 1rem;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+            .brand-name {
+                padding: 0.5rem;
+                text-align: center;
+                @include breakpoint (large) {
+                    font-size: 2.5rem;
+                } //fin include
+            }//fin brand-name
+            .brand-slogan {
+                text-align: center;
+                padding: 1rem;
+                @include breakpoint (large) {
+                    font-size: 2rem;
+                } // fin include
+            }//fin brand-slogan
+            .chevron {
+                color: rgb(219, 77, 77);
+            }
+        }//fin brand-container
+    }//fin header-content
+} //fin header
+
+.laptop-parallax {
+    background-image: url('/assets/images/laptop.jpg');
+}

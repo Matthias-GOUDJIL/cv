@@ -1,0 +1,47 @@
+#skills {
+    .skills-parallax {
+        background-image: url('/assets/images/abstract-modern-blue-background-light.png'); // background-color: rgba(240, 248, 255, 0.795);
+        .skills-container {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            @include breakpoint (large) {
+                flex-flow: row wrap;
+            } //include
+            .skills-box {
+                i {
+                    align-self: center;
+                    font-size: 3rem;
+                    color: rgb(86, 93, 116);
+                    padding-bottom: 1rem;
+                }
+                margin: 0.5rem 0;
+                color: rgb(66,
+                66,
+                66);
+                background-color: rgb(255, 255, 255);
+                box-shadow: 3px 3px 10px rgba(37,
+                37,
+                37,
+                0.747);
+                display: flex;
+                flex-flow: column wrap;
+                padding: 1rem;
+                font-size: 1rem;
+                min-height: 50%;
+                h3 {
+                    font-weight: 700;
+                    text-align: center;
+                }
+                ul {
+                    padding: 1rem;
+                }
+                @include breakpoint (large) {
+                    margin: 1rem;
+                    width: 33%;
+                    min-height: 50%;
+                } //fin include
+            }//fin skills-box
+        }//fin skills-container
+    }//fin skills-parallax
+} //fin skills

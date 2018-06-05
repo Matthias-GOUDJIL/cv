@@ -10,7 +10,7 @@ left.waypoint(function (direction) {
         left.removeClass('animated');
         left.removeClass('fadeInLeft');
     }
-},{offset:'50%'});
+},{offset:'100%'});
 
 right.waypoint(function (direction) {
     if (direction == 'down') {
@@ -20,7 +20,7 @@ right.waypoint(function (direction) {
         right.removeClass('animated');
         right.removeClass('fadeInRight');
     }
-},{offset:'50%'});
+},{offset:'100%'});
 
 brand_container.waypoint(function (direction) {
     if (direction == 'down') {
@@ -30,4 +30,4 @@ brand_container.waypoint(function (direction) {
         brand_container.removeClass('animated');
         brand_container.removeClass('swing');
     }
-},{ offset: '100' });
+},{ offset: '0%' });

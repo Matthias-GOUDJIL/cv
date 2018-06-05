@@ -3,6 +3,7 @@
 $break-small: 320px;
 $break-medium: 800px;
 $break-large: 1200px;
+
 // Mixin ****************************************************************************
 @mixin breakpoint($point) {
     @if $point==small {
