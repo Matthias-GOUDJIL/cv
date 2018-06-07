@@ -9,18 +9,18 @@
 
 //*********** tag settings ************************************************
 section {
-    color: rgb(66, 66, 66); // padding: 1rem;
-    min-height: 50vh;
-    margin: 2rem 0;
-    font-size: 0.9rem;
+    // color: rgb(66, 66, 66); // padding: 1rem;
+    // min-height: 50vh;
+    padding-top: 4rem;
+    // font-size: 0.9rem;
     h1 {
-        background-color: aliceblue;
+        margin: auto;
         text-align: center;
-        // padding: 2rem;
         font-weight: 700;
         text-transform: uppercase;
+        padding: 2rem;
         color: rgb(86, 93, 116);
-        &:hover {}
+        &:hover {}    
     }
     @include breakpoint (large) {
         font-size: 1rem;
@@ -66,4 +66,44 @@ a {
 
 .note {
     font-size: 1rem;
+}
+
+body{
+
+    #button {
+        display: inline-block;
+        background-color: #FF9800;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 4px;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        transition: background-color .3s, 
+          opacity .5s, visibility .5s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1000;
+      }
+      #button::after {
+        content: "\f077";
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+        color: #fff;
+      }
+      #button:hover {
+        cursor: pointer;
+        background-color: #333;
+      }
+      #button:active {
+        background-color: #555;
+      }
+      #button.show {
+        opacity: 1;
+        visibility: visible;
+      }      
 }

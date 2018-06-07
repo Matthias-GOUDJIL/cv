@@ -24,17 +24,21 @@
 </head>
 
 <body>
+
+    <!-- Top-button-->
+    <a id="button"><i class="fas fa-arrow-up"></i></a>
+
     <header>
+        
         <!-- Navigation-toggler-->
         <button id="menu_toggler" class="hide" type="button">
             <i class="fas fa-bars"></i>
         </button>
-
         <!-- Navigation -->
         <nav id="menu_nav">
             <ul class="menu-content">
                 <li id="home" class="menu-items">
-                    <a class="menu-link" href="#home">
+                    <a class="menu-link" href="#">
                         <i class="fas fa-home"></i>accueil</a>
                 </li>
                 <li class="menu-items">
@@ -74,7 +78,6 @@
                     </h2>
                 </div>
             </div>
-            <!-- Section About -->
         </div>
     </header>
 
@@ -101,8 +104,8 @@
 
     <!-- Section Compétences -->
     <section id="skills">
+        <h1>compétences</h1>
         <div class="parallax skills-parallax">
-            <h1>compétences</h1>
             <div class="skills-container ">
                 <div class="right skills-box">
                     <i class="fas fa-mobile-alt"></i>
@@ -146,10 +149,10 @@
         <h1>projets réalisés pendant la formation</h1>
         <div class="slider">
             <div>
-                <img src="assets/images/widgets_js.png" title="https://matthias-goudjil.github.io/admin/html/gadgets.html" alt="lorem">
+                <img src="assets/images/site-responsive.png" title="https://matthias-goudjil.github.io/loso/" alt="lorem">
             </div>
             <div>
-                <img src="assets/images/site-responsive.png" title="https://matthias-goudjil.github.io/loso/" alt="lorem">
+                <img src="assets/images/widgets_js.png" title="https://matthias-goudjil.github.io/admin/html/gadgets.html" alt="lorem">
             </div>
             <div>
                 <img src="assets/images/burger-slide.png" title="lorem" alt="lorem">
@@ -166,6 +169,7 @@
     </footer>
 
     <!-- Scripts-->
+    <script src="js/sticky_nav.js"></script>
     <script src="js/jquery3-3.3.1.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/waypoints.js"></script>

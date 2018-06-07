@@ -21,7 +21,7 @@ header {
     #menu_nav {
         background-color: rgb(255, 255, 255);
         @include breakpoint (large) {
-            display: block;
+            // display: block;
         } //fin include
         .menu-content {
             border-top: 5px solid aliceblue;
@@ -64,16 +64,18 @@ header {
         } //fin menu-content
     } //fin menu-nav
     .header-content {
+        // margin-top: 1rem;
         display: flex;
         background-image: url("/assets/images/Background_Blue.jpg");
         opacity: 0.85;
-        min-height: 45vh; // padding: 1rem;
+        min-height: 33vh;
         justify-content: center;
         flex-flow: row wrap;
         .profil {
             img {
-                min-width: 280px;
-                max-width: 400px;
+                min-height: 34vh;
+                min-width: 250px;
+                max-width: 320px;
                 width: 33vw;
                 @include breakpoint (large) {
                     width: 25vw;
@@ -81,12 +83,11 @@ header {
             }
         }
         .brand-container {
-            width: 33vw;
             font-family: 'Inconsolata', monospace;
             color: aliceblue;
             border-top: 2.5px solid aliceblue;
             border-bottom: 2.5px solid aliceblue;
-            margin: auto; // padding: 1rem;
+            margin: auto; 
             display: flex;
             flex-flow: column wrap;
             align-items: center;
@@ -105,13 +106,15 @@ header {
                 text-align: center;
                 padding: 1rem;
                 text-transform: uppercase;
-                font-weight: 400;
                 @include breakpoint (medium) {
                     font-size: 1.75rem;
                 } // fin include
                 @include breakpoint (large) {
                     font-size: 2rem;
                 } // fin include
+                strong{
+                    font-weight: 300;
+                }
             } //fin brand-slogan
             .chevron {
                 color: rgb(219, 77, 77);
@@ -121,4 +124,5 @@ header {
 } //fin header
 .laptop-parallax {
     background-image: url('/assets/images/laptop.jpg');
+    min-height: 75vh;
 }
