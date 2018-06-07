@@ -3,6 +3,8 @@ $(document).ready(function () {
         autoControls: true,
         stopAutoOnClick: true,
         pager: true,
-        captions: true
+        adaptiveHeight: true, 
+        captions: true,
+        responsive: true,
     });
 });

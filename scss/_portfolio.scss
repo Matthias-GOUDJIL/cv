@@ -2,7 +2,11 @@
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    .slider>div>img { 
-        
-        }
+    justify-content: center;
+    .slider img {
+        @include breakpoint (large) {
+            width: 66vw;
+            margin: auto;
+        } //fin include
+    }
 } //fin achievements

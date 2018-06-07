@@ -1,7 +1,8 @@
 #skills {
     .skills-parallax {
-        background-image: url('/assets/images/abstract-modern-blue-background-light.png'); // background-color: rgba(240, 248, 255, 0.795);
+        background-image: url('/assets/images/Background_Blue.jpg'); // background-color: rgba(240, 248, 255, 0.795);
         .skills-container {
+            padding: 8rem 0;
             display: flex;
             flex-flow: column wrap;
             justify-content: center;
@@ -12,14 +13,14 @@
                 i {
                     align-self: center;
                     font-size: 3rem;
-                    color: rgb(86, 93, 116);
+                    // color: rgb(86, 93, 116);
+                    color: antiquewhite;
+                    background-color: transparent;
                     padding-bottom: 1rem;
                 }
                 margin: 0.5rem 0;
-                color: rgb(66,
-                66,
-                66);
-                background-color: rgb(255, 255, 255);
+                color: rgb(255, 255, 255);
+                background-color: rgba(255, 255, 255, 0);
                 box-shadow: 3px 3px 10px rgba(37,
                 37,
                 37,
