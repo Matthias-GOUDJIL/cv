@@ -177,7 +177,7 @@ header #menu_nav .menu-content .menu-items .menu-link i {
 
 header .header-content {
   display: flex;
-  background-image: url("/assets/images/Background_Blue.jpg");
+  background-image: url("../../assets/images/Background_Blue.jpg");
   opacity: 0.85;
   min-height: 33vh;
   justify-content: center;
@@ -253,12 +253,12 @@ header .header-content .brand-container .chevron {
 }
 
 .laptop-parallax {
-  background-image: url("/assets/images/laptop.jpg");
+  background-image: url("../../assets/images/laptop.jpg");
   min-height: 75vh;
 }
 
 #skills .skills-parallax {
-  background-image: url("/assets/images/Background_Blue.jpg");
+  background-image: url("../../assets/images/Background_Blue.jpg");
 }
 
 #skills .skills-parallax .skills-container {
