@@ -17,20 +17,8 @@
             display: flex;
             flex-flow: column wrap; 
         } //fin include
-        .contact-btn {
-            border: 1px solid rgb(86, 93, 116);
-            font-size: 1rem;
-            color: rgb(255, 255, 255);
-            background-color: rgb(86, 93, 116);
-            padding: 0.5rem;
-            margin: 0.5rem;
-            align-self: center;
-            &:hover {
-                color: rgb(86, 93, 116);
-                background-color: rgb(255, 255, 255);
-                border: 1px solid rgb(86, 93, 116);
-            }
-        } //fin contact-btn
+        
+        
         .note {
             align-self: flex-end;
             padding: 0.5rem;

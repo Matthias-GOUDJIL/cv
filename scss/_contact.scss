@@ -1,0 +1,42 @@
+#contact {
+    .contactform {
+        display: flex;
+        flex-flow: column;
+        .contact-fieldset {
+            margin: 1rem auto;
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            min-width: 75%;
+            box-shadow: 1px 1px 5px #585757;
+            border: none;
+            div {
+                min-width: 50%;
+                margin: auto;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-evenly;
+                label {
+                    width: 200px;
+                    padding: 0.7rem;
+                    text-transform: uppercase;
+                }
+                input {
+                    box-shadow: 1px 1px 5px #585757;
+                    min-width: 250px;
+                    line-height: 1.8rem;
+                }
+            }
+        }
+        #message {
+            min-width: 75%;
+            margin: auto;
+            padding: 1rem;
+            box-shadow: 1px 1px 5px #585757;
+            border: none;
+        }
+        #btn-submit {
+            padding: 1rem 10%;
+        }
+    }
+}

@@ -163,8 +163,26 @@
 
 
     <footer>
-        <section id="contact">
-
+        <section id="contact" >
+            <h1>contact</h1>
+            <form class="contactform" action="contact.php" method="post">
+                <fieldset class="contact-fieldset">
+                    <div>
+                        <label for="lastname">Votre nom:</label><input type="text" name="lastname" id="lastname">
+                    </div>
+                    <div>
+                        <label for="firstname">Votre prénom:</label><input type="text" name="firstname" id="firstname">
+                    </div>
+                    <div>
+                        <label for="email">Votre email:</label><input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="subject">sujet: </label><input type="text" name="subject" id="subject">
+                    </div>                    
+                </fieldset>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="votre message"></textarea>
+                <button id="btn-submit" type="submit" name="submit">envoyer </button>
+            </form>
         </section>
     </footer>
 
