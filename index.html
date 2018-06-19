@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <!-- Required meta tags -->
@@ -26,7 +26,7 @@
 <body>
 
     <!-- Top-button-->
-    <a id="button"><i class="fas fa-arrow-up"></i></a>
+    <a id="arrow"><i class="fas fa-arrow-up"></i></a>
 
     <header>
         
@@ -37,10 +37,6 @@
         <!-- Navigation -->
         <nav id="menu_nav">
             <ul class="menu-content">
-                <li id="home" class="menu-items">
-                    <a class="menu-link" href="#">
-                        <i class="fas fa-home"></i>accueil</a>
-                </li>
                 <li class="menu-items">
                     <a class="menu-link" href="#skills">
                         <i class="fas fa-cogs"></i>compétences</a>
@@ -62,9 +58,6 @@
 
         <!-- Header-content -->
         <div class="header-content">
-            <div class="profil">
-                <img src="assets/images/profil.jpg" alt="photo profil">
-            </div>
             <div class="animated swing brand-container">
                 <div>
                     <h1 class="brand-name">Matthias</h1>
@@ -84,8 +77,9 @@
 
     <!-- Section About -->
     <section id="about">
-        <h1>A propos</h1>
-        <div class="about-container">
+        <img class="profil" src="assets/images/profil.jpg" alt="photo profil">
+        <div class="about-description">
+            <h1>A propos</h1>
             <p>En cours de formation
                 <strong>développeur web</strong> chez
                 <strong>ARINFO*</strong> jusqu'au 03 août 2018.</p>
@@ -187,8 +181,8 @@
     </footer>
 
     <!-- Scripts-->
-    <script src="js/sticky_nav.js"></script>
     <script src="js/jquery3-3.3.1.min.js"></script>
+    <script src="js/sticky_nav.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/waypoints.js"></script>
     <script src="js/menu_toggler.js"></script>

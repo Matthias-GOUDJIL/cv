@@ -1,27 +1,29 @@
 #about {
+    padding: 0;
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-flow: row wrap;
-    @include breakpoint (large) {
-        flex-flow: row wrap;
-    } //fin include
-    .about-container {
-        // width: 50%;
-        background-color: rgba(255, 255, 255, 0.123);
-        padding: 1rem;
-        text-align: center;
-        @include breakpoint (large) {
-            flex-flow: row wrap;
-            // max-width: 75vw;
-            // margin: auto;
-            display: flex;
-            flex-flow: column wrap; 
-        } //fin include
-        
-        
-        .note {
-            align-self: flex-end;
-            padding: 0.5rem;
+    align-items: center;
+        .profil {
+            max-width: 280px;
+            margin: auto;
+            @include breakpoint (large) {
+                margin: 0;          
+            } //fin include          
         }
-    } //fin about-container
+        .about-description{
+            display: flex;
+            flex-flow: column wrap;
+            background-color: rgba(255, 255, 255, 0.123);
+            padding: 1rem;
+            
+            @include breakpoint (large) {
+                max-width: 50vw;
+                margin: auto;
+            } //fin include
+            .note {
+                align-self: center;
+                padding: 0.5rem;
+            }
+        }//fin about-description
 } //about

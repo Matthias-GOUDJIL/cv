@@ -1,4 +1,8 @@
 #contact {
+    @include breakpoint (large) {
+        width: 50%;
+        margin: auto;
+    } //fin include
     .contactform {
         display: flex;
         flex-flow: column;
@@ -22,9 +26,11 @@
                     text-transform: uppercase;
                 }
                 input {
+                    margin: 0.3rem 0;
                     box-shadow: 1px 1px 5px #585757;
-                    min-width: 250px;
-                    line-height: 1.8rem;
+                    
+                    line-height: 2rem;
+                    font-size: 1.2rem;
                 }
             }
         }

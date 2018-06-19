@@ -9,17 +9,15 @@
 
 //*********** tag settings ************************************************
 section {
-    // color: rgb(66, 66, 66); // padding: 1rem;
-    // min-height: 50vh;
-    padding-top: 4rem; // font-size: 0.9rem;
+    // padding-top: 2rem; 
     h1 {
+        text-decoration: underline tomato solid;
         margin: auto;
         text-align: center;
         font-weight: 700;
         text-transform: uppercase;
         padding: 2rem;
         color: rgb(86, 93, 116);
-        &:hover {}
     }
     @include breakpoint (large) {
         font-size: 1rem;
@@ -63,7 +61,7 @@ button {
 }
     // ************ classes settings *******************************************
     .parallax {
-        min-height: 45vh;
+        min-height: 10vh;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -79,13 +77,13 @@ button {
         font-size: 1rem;
     }
     body {
-        #button {
+        #arrow {
             display: inline-block;
-            background-color: #FF9800;
+            background-color: rgba(117, 113, 112, 0.829);;
             width: 50px;
             height: 50px;
             text-align: center;
-            border-radius: 4px;
+            border-radius: 3px;
             position: fixed;
             bottom: 30px;
             right: 30px;
@@ -94,24 +92,29 @@ button {
             visibility: hidden;
             z-index: 1000;
         }
-        #button::after {
-            content: "\f077";
-            font-family: FontAwesome;
-            font-weight: normal;
-            font-style: normal;
-            font-size: 2em;
-            line-height: 50px;
-            color: #fff;
-        }
-        #button:hover {
+        // #arrow::after {
+        //     content: "\f077";
+        //     font-family: FontAwesome;
+        //     font-weight: normal;
+        //     font-style: normal;
+        //     font-size: 2em;
+        //     line-height: 50px;
+        //     color: #fff;
+        // }
+        #arrow:hover {
             cursor: pointer;
-            background-color: #333;
+            background-color: rgb(194, 191, 191);
         }
-        #button:active {
-            background-color: #555;
+        #arrow:active {
+            background-color: rgba(206, 204, 204, 0.74);
         }
-        #button.show {
+        #arrow.show {
             opacity: 1;
             visibility: visible;
+        }
+        i{
+            font-size: 1.5rem;
+            line-height: 3rem;
+            color: #fff;
         }
     }
