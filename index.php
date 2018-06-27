@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+<?php 
+    session_start();
+    function verifyInput($var){
+        $var = trim($var);
+        $var = stripslashes($var);
+        $var = htmlspecialchars($var);
+        return $var;
+    }
+?><!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -154,27 +162,41 @@
         </div>
     </section>
 
-
-
     <footer>
         <section id="contact" >
             <h1>contact</h1>
+
+
+            <?php if (array_key_exists('errors',$_SESSION)): ?>
+                <div>
+                    <?= implode('<br>', $_SESSION['errors']); ?>
+                </div>
+            <?php unset($_SESSION['errors']); endif; ?>
+
+            <?php if (array_key_exists('success',$_SESSION)): ?>
+                <div>
+                    Votre email a bien été envoyé! Je vous répondrai dans les plus brefs délais. Merci de votre visite et à bientôt!
+                </div>
+            <?php unset($_SESSION['success']); endif; ?>
+
+
             <form class="contactform" action="contact.php" method="post">
                 <fieldset class="contact-fieldset">
                     <div>
-                        <label for="lastname">Votre nom:</label><input type="text" name="lastname" id="lastname">
+                        <label for="lastname">Votre nom:</label><input type="text" name="lastname" id="lastname" value="<?= isset($_SESSION['inputs']['lastname']) ? verifyInput($_SESSION['inputs']['lastname']) : ''; ?>">
+                    </div>
+                    
+                    <div>
+                        <label for="firstname">Votre prénom:</label><input type="text" name="firstname" id="firstname" value="<?= isset($_SESSION['inputs']['firstname']) ? verifyInput($_SESSION['inputs']['firstname']) : ''; ?>">
                     </div>
                     <div>
-                        <label for="firstname">Votre prénom:</label><input type="text" name="firstname" id="firstname">
+                        <label for="email">Votre email:</label><input type="text" name="email" id="email" value="<?= isset($_SESSION['inputs']['email']) ? verifyInput($_SESSION['inputs']['email']) : ''; ?>">
                     </div>
                     <div>
-                        <label for="email">Votre email:</label><input type="email" name="email" id="email">
-                    </div>
-                    <div>
-                        <label for="subject">sujet: </label><input type="text" name="subject" id="subject">
+                        <label for="subject">sujet: </label><input type="text" name="subject" id="subject" value="<?= isset($_SESSION['inputs']['subject']) ? verifyInput($_SESSION['inputs']['subject']) : ''; ?>">
                     </div>                    
                 </fieldset>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="votre message"></textarea>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="votre message"><?= isset($_SESSION['inputs']['message']) ? verifyInput($_SESSION['inputs']['message']) : ''; ?></textarea>
                 <button id="btn-submit" type="submit" name="submit">envoyer </button>
             </form>
         </section>
@@ -193,3 +215,9 @@
 </body>
 
 </html>
+
+<?php 
+unset($_SESSION['inputs']);
+unset($_SESSION['success']);
+unset($_SESSION['errors']);
+?>

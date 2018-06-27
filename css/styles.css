@@ -1,13 +1,15 @@
 * {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 section h1 {
-  text-decoration: underline tomato solid;
+  -webkit-text-decoration: underline tomato solid;
+          text-decoration: underline tomato solid;
   margin: auto;
   text-align: center;
   font-weight: 700;
@@ -40,6 +42,7 @@ a {
 
 .hide {
   display: none;
+  -webkit-transition: all 2s ease-in;
   transition: all 2s ease-in;
 }
 
@@ -50,7 +53,8 @@ button {
   background-color: #565d74;
   padding: 0.5rem;
   margin: 0.5rem;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 button:hover {
@@ -88,6 +92,7 @@ body #arrow {
   position: fixed;
   bottom: 30px;
   right: 30px;
+  -webkit-transition: background-color .3s, opacity .5s, visibility .5s;
   transition: background-color .3s, opacity .5s, visibility .5s;
   opacity: 0;
   visibility: hidden;
@@ -149,14 +154,24 @@ header #menu_nav {
 header #menu_nav .menu-content {
   border-top: 5px solid aliceblue;
   border-bottom: 5px solid aliceblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column wrap;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 @media (min-width: 768px) {
   header #menu_nav .menu-content {
-    flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
   }
 }
 
@@ -187,12 +202,19 @@ header #menu_nav .menu-content .menu-items .menu-link i {
 }
 
 header .header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-image: url("../../assets/images/Background_Blue.jpg");
   opacity: 0.85;
   min-height: 33vh;
-  justify-content: center;
-  flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 header .header-content .brand-container {
@@ -201,10 +223,19 @@ header .header-content .brand-container {
   border-top: 2.5px solid aliceblue;
   border-bottom: 2.5px solid aliceblue;
   margin: 1rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header .header-content .brand-container .brand-name {
@@ -249,14 +280,24 @@ header .header-content .brand-container .chevron {
 
 #skills .skills-parallax .skills-container {
   padding: 5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (min-width: 768px) {
   #skills .skills-parallax .skills-container {
-    flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
   }
 }
 
@@ -264,16 +305,23 @@ header .header-content .brand-container .chevron {
   margin: 0.5rem 0;
   color: white;
   background-color: rgba(255, 255, 255, 0);
-  box-shadow: 3px 3px 10px rgba(37, 37, 37, 0.747);
+  -webkit-box-shadow: 3px 3px 10px rgba(37, 37, 37, 0.747);
+          box-shadow: 3px 3px 10px rgba(37, 37, 37, 0.747);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
   padding: 1rem;
   font-size: 1rem;
   min-height: 50%;
 }
 
 #skills .skills-parallax .skills-container .skills-box i {
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   font-size: 3rem;
   color: antiquewhite;
   background-color: transparent;
@@ -298,10 +346,19 @@ header .header-content .brand-container .chevron {
 }
 
 #achievements {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (min-width: 768px) {
@@ -314,9 +371,16 @@ header .header-content .brand-container .chevron {
 #about {
   padding: 0;
   background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #about .profil {
@@ -331,8 +395,13 @@ header .header-content .brand-container .chevron {
 }
 
 #about .about-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
   background-color: rgba(255, 255, 255, 0.123);
   padding: 1rem;
 }
@@ -345,7 +414,8 @@ header .header-content .brand-container .chevron {
 }
 
 #about .about-description .note {
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   padding: 0.5rem;
 }
 
@@ -357,26 +427,44 @@ header .header-content .brand-container .chevron {
 }
 
 #contact .contactform {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
 #contact .contactform .contact-fieldset {
   margin: 1rem auto;
   padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-width: 75%;
-  box-shadow: 1px 1px 5px #585757;
+  -webkit-box-shadow: 1px 1px 5px #585757;
+          box-shadow: 1px 1px 5px #585757;
   border: none;
 }
 
 #contact .contactform .contact-fieldset div {
   min-width: 50%;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 #contact .contactform .contact-fieldset div label {
@@ -387,7 +475,8 @@ header .header-content .brand-container .chevron {
 
 #contact .contactform .contact-fieldset div input {
   margin: 0.3rem 0;
-  box-shadow: 1px 1px 5px #585757;
+  -webkit-box-shadow: 1px 1px 5px #585757;
+          box-shadow: 1px 1px 5px #585757;
   line-height: 2rem;
   font-size: 1.2rem;
 }
@@ -396,7 +485,8 @@ header .header-content .brand-container .chevron {
   min-width: 75%;
   margin: auto;
   padding: 1rem;
-  box-shadow: 1px 1px 5px #585757;
+  -webkit-box-shadow: 1px 1px 5px #585757;
+          box-shadow: 1px 1px 5px #585757;
   border: none;
 }
 
