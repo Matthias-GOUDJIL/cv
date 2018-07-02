@@ -59,11 +59,21 @@ header {
             } //fin menu-items
         } //fin menu-content
     } //fin menu-nav
+} //fin header
+
+.laptop-parallax {
+    background-image: url('../../assets/images/laptop.jpg');
+    min-height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    
     .header-content {
+        margin: auto;
+        padding: 15%;
         display: flex;
         background-image: url("../../assets/images/Background_Blue.jpg");
-        opacity: 0.85;
-        min-height: 33vh;
+        opacity: 0.75;
+        min-width: 250px;
         justify-content: center;
         flex-flow: row wrap;
         
@@ -100,8 +110,4 @@ header {
             }
         } //fin brand-container
     } //fin header-content
-} //fin header
-.laptop-parallax {
-    background-image: url('../../assets/images/laptop.jpg');
-    min-height: 50vh;
 }

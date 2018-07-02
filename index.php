@@ -34,10 +34,11 @@
 <body>
 
     <!-- Top-button-->
-    <a id="arrow"><i class="fas fa-arrow-up"></i></a>
+    <!-- <a id="arrow"><i class="fas fa-arrow-up"></i></a> -->
+    <a id="arrow"><i class="fas fa-angle-up"></i></a>
+  
 
-    <header>
-        
+    <header>       
         <!-- Navigation-toggler-->
         <button id="menu_toggler" class="hide" type="button">
             <i class="fas fa-bars"></i>
@@ -63,8 +64,10 @@
                 </li>
             </ul>
         </nav>
+    </header>
 
-        <!-- Header-content -->
+    <!-- Parallax -->
+    <div class="laptop-parallax parallax">
         <div class="header-content">
             <div class="animated swing brand-container">
                 <div>
@@ -80,29 +83,27 @@
                 </div>
             </div>
         </div>
-    </header>
-
-
+    </div>
+    
     <!-- Section About -->
     <section id="about">
-        <img class="profil" src="assets/images/profil.jpg" alt="photo profil">
-        <div class="about-description">
-            <h1>A propos</h1>
-            <p>En cours de formation
-                <strong>développeur web</strong> chez
-                <strong>ARINFO*</strong> jusqu'au 03 août 2018.</p>
-            <p> Possibilité de poursuivre en
-                <strong>contrat de professionnalisation</strong> (à partir de septembre 2018 - durée: 1an) débouchant sur une certification
-                <strong>"Designer Web"</strong> (titre professionnel de niveau III (bac +2) inscrit au RNCP).</p>
-            <p>Vous etes une entreprise ou une institution et êtes intéressée par les avantages de ce type de contrat?</p>
-            <button class="contact-btn" type=button>contactez-moi!</button>
-            <p class="note">*Formation labellisée
-                <strong>Grande Ecole du Numérique.</strong>
+        <h1>A propos</h1>
+        <div class="about-container">
+            <img class="profil" src="assets/images/profil.jpg" alt="photo profil">
+            <div class="about-description">
+                <p>En cours de formation
+                    <strong>développeur web</strong> chez
+                    <strong>ARINFO*</strong> jusqu'au 03 août 2018.</p>
+                <p> Possibilité de poursuivre en
+                    <strong>contrat de professionnalisation</strong> (à partir de septembre 2018 - durée: 1an) débouchant sur une certification
+                    <strong>"Designer Web"</strong> (titre professionnel de niveau III (bac +2) inscrit au RNCP).</p>
+                <p>Vous etes une entreprise ou une institution et êtes intéressée par les avantages de ce type de contrat?</p>
+                <button class="contact-btn" type=button>contactez-moi!</button>
+                <p class="note">*Formation labellisée
+                    <strong>Grande Ecole du Numérique.</strong>
+            </div>
         </div>
     </section>
-
-    <!-- Parallax -->
-    <div class="laptop-parallax parallax"></div>
 
     <!-- Section Compétences -->
     <section id="skills">
@@ -163,54 +164,51 @@
     </section>
 
     <footer>
+        <!-- Contact Form -->
         <section id="contact" >
             <h1>contact</h1>
-
-
-            <?php if (array_key_exists('errors',$_SESSION)): ?>
-                <div>
-                    <?= implode('<br>', $_SESSION['errors']); ?>
-                </div>
-            <?php unset($_SESSION['errors']); endif; ?>
-
-            <?php if (array_key_exists('success',$_SESSION)): ?>
-                <div>
-                    Votre email a bien été envoyé! Je vous répondrai dans les plus brefs délais. Merci de votre visite et à bientôt!
-                </div>
-            <?php unset($_SESSION['success']); endif; ?>
-
-
             <form class="contactform" action="contact.php" method="post">
                 <fieldset class="contact-fieldset">
                     <div>
-                        <label for="lastname">Votre nom:</label><input type="text" name="lastname" id="lastname" value="<?= isset($_SESSION['inputs']['lastname']) ? verifyInput($_SESSION['inputs']['lastname']) : ''; ?>">
+                        <input type="text" name="lastname" id="lastname" placeholder="votre nom" value="<?= isset($_SESSION['inputs']['lastname']) ? verifyInput($_SESSION['inputs']['lastname']) : ''; ?>">
                     </div>
                     
                     <div>
-                        <label for="firstname">Votre prénom:</label><input type="text" name="firstname" id="firstname" value="<?= isset($_SESSION['inputs']['firstname']) ? verifyInput($_SESSION['inputs']['firstname']) : ''; ?>">
+                        <input type="text" name="firstname" id="firstname" placeholder="votre prénom" value="<?= isset($_SESSION['inputs']['firstname']) ? verifyInput($_SESSION['inputs']['firstname']) : ''; ?>">
                     </div>
                     <div>
-                        <label for="email">Votre email:</label><input type="text" name="email" id="email" value="<?= isset($_SESSION['inputs']['email']) ? verifyInput($_SESSION['inputs']['email']) : ''; ?>">
+                        <input type="text" name="email" id="email" placeholder="votre email" value="<?= isset($_SESSION['inputs']['email']) ? verifyInput($_SESSION['inputs']['email']) : ''; ?>">
                     </div>
                     <div>
-                        <label for="subject">sujet: </label><input type="text" name="subject" id="subject" value="<?= isset($_SESSION['inputs']['subject']) ? verifyInput($_SESSION['inputs']['subject']) : ''; ?>">
+                        <input type="text" name="subject" id="subject" placeholder="sujet" value="<?= isset($_SESSION['inputs']['subject']) ? verifyInput($_SESSION['inputs']['subject']) : ''; ?>">
                     </div>                    
                 </fieldset>
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="votre message"><?= isset($_SESSION['inputs']['message']) ? verifyInput($_SESSION['inputs']['message']) : ''; ?></textarea>
-                <button id="btn-submit" type="submit" name="submit">envoyer </button>
+
+                <?php if (array_key_exists('errors',$_SESSION)): ?>
+                    <div class="error-submit">
+                        <?= implode('<br>', $_SESSION['errors']); ?>
+                    </div>
+                <?php unset($_SESSION['errors']); endif; ?>
+    
+                <?php if (array_key_exists('success',$_SESSION)): ?>
+                    <div class="success-submit">
+                        Votre email a bien été envoyé! Je vous répondrai dans les plus brefs délais. Merci de votre visite et à bientôt!
+                    </div>
+                <?php unset($_SESSION['success']); endif; ?>
+
+                <button id="btn-submit" type="submit" name="submit">envoyer </button>             
             </form>
+
+
         </section>
     </footer>
 
     <!-- Scripts-->
-    <script src="js/jquery3-3.3.1.min.js"></script>
-    <script src="js/sticky_nav.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/waypoints.js"></script>
-    <script src="js/menu_toggler.js"></script>
-    <script src="js/smooth_scroll.js"></script>
+    <script src="dist/js/jquery3-3.3.1.min.js"></script>
+    <script src="dist/js/jquery.waypoints.min.js"></script>
     <script src="vendors/bxslider/dist/jquery.bxslider.min.js"></script>
-    <script src="js/slider.js"></script>
+    <script src="dist/js/all.min.js"></script>
 
 </body>
 

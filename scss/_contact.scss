@@ -20,14 +20,12 @@
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: space-evenly;
-                label {
-                    width: 200px;
-                    padding: 0.7rem;
-                    text-transform: uppercase;
-                }
                 input {
-                    margin: 0.3rem 0;
-                    box-shadow: 1px 1px 5px #585757;
+                    text-align: center;
+                    border: none;
+                    border-bottom: 2px solid rgba(255, 99, 71, 0.418);
+                    margin: 0.5rem 0;
+                    // box-shadow: 1px 1px 5px #585757;
                     
                     line-height: 2rem;
                     font-size: 1.2rem;
@@ -41,6 +39,27 @@
             box-shadow: 1px 1px 5px #585757;
             border: none;
         }
+        
+        .error-submit{
+            text-align: center;
+            border: 1px solid rgb(243, 88, 88);
+            padding: 0.5rem;
+            background-color: rgb(241, 125, 125);
+            color: rgb(253, 253, 253);
+            margin: 1rem auto;
+            min-width: 75%;
+            line-height: 2rem;
+        }
+        .success-submit{
+            border: 1px solid rgb(33, 206, 105);
+            padding: 0.5rem;
+            background-color: rgb(48, 194, 85);
+            color: rgb(253, 253, 253);
+            margin: 1rem auto;
+            min-width: 75%;
+            line-height: 2rem;
+        }
+
         #btn-submit {
             padding: 1rem 10%;
         }

@@ -1,6 +1,5 @@
 * {
   font-family: 'Ubuntu', sans-serif;
-  font-weight: 300;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
@@ -8,8 +7,6 @@
 }
 
 section h1 {
-  -webkit-text-decoration: underline tomato solid;
-          text-decoration: underline tomato solid;
   margin: auto;
   text-align: center;
   font-weight: 700;
@@ -54,6 +51,7 @@ button {
   padding: 0.5rem;
   margin: 0.5rem;
   -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
 }
 
@@ -83,14 +81,15 @@ button:hover {
 }
 
 body #arrow {
-  display: inline-block;
+  font-size: 3rem;
+  color: #fff;
   background-color: rgba(117, 113, 112, 0.829);
   width: 50px;
   height: 50px;
   text-align: center;
-  border-radius: 3px;
+  border-radius: 5px;
   position: fixed;
-  bottom: 30px;
+  bottom: 10px;
   right: 30px;
   -webkit-transition: background-color .3s, opacity .5s, visibility .5s;
   transition: background-color .3s, opacity .5s, visibility .5s;
@@ -111,12 +110,6 @@ body #arrow:active {
 body #arrow.show {
   opacity: 1;
   visibility: visible;
-}
-
-body i {
-  font-size: 1.5rem;
-  line-height: 3rem;
-  color: #fff;
 }
 
 header {
@@ -201,13 +194,27 @@ header #menu_nav .menu-content .menu-items .menu-link i {
   margin-right: 0.5rem;
 }
 
-header .header-content {
+.laptop-parallax {
+  background-image: url("../../assets/images/laptop.jpg");
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.laptop-parallax .header-content {
+  margin: auto;
+  padding: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-image: url("../../assets/images/Background_Blue.jpg");
-  opacity: 0.85;
-  min-height: 33vh;
+  opacity: 0.75;
+  min-width: 250px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -217,7 +224,7 @@ header .header-content {
           flex-flow: row wrap;
 }
 
-header .header-content .brand-container {
+.laptop-parallax .header-content .brand-container {
   font-family: 'Inconsolata', monospace;
   color: aliceblue;
   border-top: 2.5px solid aliceblue;
@@ -238,40 +245,35 @@ header .header-content .brand-container {
           justify-content: center;
 }
 
-header .header-content .brand-container .brand-name {
+.laptop-parallax .header-content .brand-container .brand-name {
   padding: 0.5rem;
   text-align: center;
 }
 
 @media (min-width: 321px) {
-  header .header-content .brand-container .brand-name {
+  .laptop-parallax .header-content .brand-container .brand-name {
     font-size: 2.5rem;
   }
 }
 
-header .header-content .brand-container .brand-slogan {
+.laptop-parallax .header-content .brand-container .brand-slogan {
   text-align: center;
   padding: 1rem;
   text-transform: uppercase;
 }
 
 @media (min-width: 321px) {
-  header .header-content .brand-container .brand-slogan {
+  .laptop-parallax .header-content .brand-container .brand-slogan {
     font-size: 1.2rem;
   }
 }
 
-header .header-content .brand-container .brand-slogan strong {
+.laptop-parallax .header-content .brand-container .brand-slogan strong {
   font-weight: 300;
 }
 
-header .header-content .brand-container .chevron {
+.laptop-parallax .header-content .brand-container .chevron {
   color: #db4d4d;
-}
-
-.laptop-parallax {
-  background-image: url("../../assets/images/laptop.jpg");
-  min-height: 50vh;
 }
 
 #skills .skills-parallax {
@@ -321,6 +323,7 @@ header .header-content .brand-container .chevron {
 
 #skills .skills-parallax .skills-container .skills-box i {
   -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
   font-size: 3rem;
   color: antiquewhite;
@@ -371,6 +374,9 @@ header .header-content .brand-container .chevron {
 #about {
   padding: 0;
   background-color: white;
+}
+
+#about .about-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -381,20 +387,17 @@ header .header-content .brand-container .chevron {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#about .profil {
-  max-width: 280px;
+#about .about-container .profil {
+  max-width: 250px;
   margin: auto;
 }
 
-@media (min-width: 768px) {
-  #about .profil {
-    margin: 0;
-  }
-}
-
-#about .about-description {
+#about .about-container .about-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -407,14 +410,15 @@ header .header-content .brand-container .chevron {
 }
 
 @media (min-width: 768px) {
-  #about .about-description {
-    max-width: 50vw;
+  #about .about-container .about-description {
+    max-width: 66vw;
     margin: auto;
   }
 }
 
-#about .about-description .note {
+#about .about-container .about-description .note {
   -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
   padding: 0.5rem;
 }
@@ -467,16 +471,11 @@ header .header-content .brand-container .chevron {
           justify-content: space-evenly;
 }
 
-#contact .contactform .contact-fieldset div label {
-  width: 200px;
-  padding: 0.7rem;
-  text-transform: uppercase;
-}
-
 #contact .contactform .contact-fieldset div input {
-  margin: 0.3rem 0;
-  -webkit-box-shadow: 1px 1px 5px #585757;
-          box-shadow: 1px 1px 5px #585757;
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid rgba(255, 99, 71, 0.418);
+  margin: 0.5rem 0;
   line-height: 2rem;
   font-size: 1.2rem;
 }
@@ -488,6 +487,27 @@ header .header-content .brand-container .chevron {
   -webkit-box-shadow: 1px 1px 5px #585757;
           box-shadow: 1px 1px 5px #585757;
   border: none;
+}
+
+#contact .contactform .error-submit {
+  text-align: center;
+  border: 1px solid #f35858;
+  padding: 0.5rem;
+  background-color: #f17d7d;
+  color: #fdfdfd;
+  margin: 1rem auto;
+  min-width: 75%;
+  line-height: 2rem;
+}
+
+#contact .contactform .success-submit {
+  border: 1px solid #21ce69;
+  padding: 0.5rem;
+  background-color: #30c255;
+  color: #fdfdfd;
+  margin: 1rem auto;
+  min-width: 75%;
+  line-height: 2rem;
 }
 
 #contact .contactform #btn-submit {

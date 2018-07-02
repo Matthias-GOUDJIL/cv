@@ -1,0 +1,31 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "site de présentation (cv)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matthias-GOUDJIL/cv.git"
+  },
+  "keywords": [
+    "développeur",
+    "web",
+    "vendée",
+    "cv"
+  ],
+  "author": "Matthias GOUDJIL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Matthias-GOUDJIL/cv/issues"
+  },
+  "homepage": "https://github.com/Matthias-GOUDJIL/cv#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.0"
+  }
+}
