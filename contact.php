@@ -1,4 +1,5 @@
 <?php 
+session_start();
 $errors = [];
 
 if(!array_key_exists('lastname',$_POST) || $_POST['lastname'] == ''){
@@ -17,7 +18,10 @@ if(!array_key_exists('message',$_POST) || $_POST['message'] == ''){
     $errors['message'] = "Vous n'avez pas renseigné votre message";
 }
 
-session_start();
+if(!array_key_exists('captcha',$_POST) || $_POST['captcha'] == '' || $_POST['captcha'] != $_SESSION['captcha'] ){
+    $errors['captcha'] = "captcha invalide !!";
+}
+
 
 if (!empty($errors)) {
     $_SESSION['errors'] = $errors;

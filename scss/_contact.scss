@@ -11,7 +11,7 @@
             padding: 0.5rem;
             display: flex;
             flex-direction: column;
-            min-width: 75%;
+            min-width: 100%;
             box-shadow: 1px 1px 5px #585757;
             border: none;
             div {
@@ -32,7 +32,7 @@
                 }
             }
         }
-        #message {
+        #message .captcha-container {
             min-width: 75%;
             margin: auto;
             padding: 1rem;
@@ -58,6 +58,13 @@
             margin: 1rem auto;
             min-width: 75%;
             line-height: 2rem;
+        }
+
+        .captcha-container {
+            text-align: center;
+            input{
+                min-width : 75%;
+            }
         }
 
         #btn-submit {

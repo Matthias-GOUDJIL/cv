@@ -184,6 +184,11 @@
                     </div>                    
                 </fieldset>
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="votre message"><?= isset($_SESSION['inputs']['message']) ? verifyInput($_SESSION['inputs']['message']) : ''; ?></textarea>
+                
+                <div class="captcha-container">
+                    <img src="captcha.php" alt="captcha">
+                    <input type="text" name="captcha" id="captcha" placeholder="Entrez le NOMBRE indiqué" value="<?= isset($_SESSION['inputs']['captcha']) ? verifyInput($_SESSION['inputs']['captcha']) : ''; ?>">                
+                </div>
 
                 <?php if (array_key_exists('errors',$_SESSION)): ?>
                     <div class="error-submit">
@@ -196,6 +201,7 @@
                         Votre email a bien été envoyé! Je vous répondrai dans les plus brefs délais. Merci de votre visite et à bientôt!
                     </div>
                 <?php unset($_SESSION['success']); endif; ?>
+
 
                 <button id="btn-submit" type="submit" name="submit">envoyer </button>             
             </form>

@@ -1,5 +1,5 @@
 * {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: Verdana, Geneva, Sans-Serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
@@ -393,6 +393,7 @@ header #menu_nav .menu-content .menu-items .menu-link i {
 }
 
 #about .about-container .profil {
+  border-radius: 20px;
   max-width: 250px;
   margin: auto;
 }
@@ -450,7 +451,7 @@ header #menu_nav .menu-content .menu-items .menu-link i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 75%;
+  min-width: 100%;
   -webkit-box-shadow: 1px 1px 5px #585757;
           box-shadow: 1px 1px 5px #585757;
   border: none;
@@ -480,7 +481,7 @@ header #menu_nav .menu-content .menu-items .menu-link i {
   font-size: 1.2rem;
 }
 
-#contact .contactform #message {
+#contact .contactform #message .captcha-container {
   min-width: 75%;
   margin: auto;
   padding: 1rem;
@@ -508,6 +509,14 @@ header #menu_nav .menu-content .menu-items .menu-link i {
   margin: 1rem auto;
   min-width: 75%;
   line-height: 2rem;
+}
+
+#contact .contactform .captcha-container {
+  text-align: center;
+}
+
+#contact .contactform .captcha-container input {
+  min-width: 75%;
 }
 
 #contact .contactform #btn-submit {
