@@ -59,6 +59,10 @@
                         <i class="fas fa-info-circle"></i>a propos</a>
                 </li>
                 <li class="menu-items">
+                    <a class="menu-link" href="cv.pdf">
+                    <i class="far fa-address-card"></i>mon cv</a>
+                </li>
+                <li class="menu-items">
                     <a class="menu-link" href="#contact">
                         <i class="far fa-envelope"></i>contact</a>
                 </li>

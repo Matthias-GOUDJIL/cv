@@ -12,10 +12,7 @@
     $( document ).ready(function() {
        
           if ($(window).width() < 768) {
-            $('#menu_nav').addClass('hide');}
-        //   } else {
-        //     $('#menu_nav').removeClass('show');
-        //   }
-        
+            $('#menu_nav').addClass('hide');
+        }
       });
       
