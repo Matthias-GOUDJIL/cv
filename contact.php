@@ -33,7 +33,7 @@ if (!empty($errors)) {
     $email = $_POST['email'];
     $headers = 'FROM: '.$_POST['email'];
     $subject = $_POST['subject'];
-    mail('contact@matthias-goudjil.fr', $subject, $message, $headers);
+    mail('bonjour@matthias-goudjil.fr', $subject, $message, $headers);
     header('Location: index.php#contact');
 }
 
