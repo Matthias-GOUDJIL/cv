@@ -72,14 +72,12 @@
 
     <!-- Parallax -->
     <div class="laptop-parallax parallax">
+        <img class="profil" src="assets/images/profil.jpg" alt="photo profil">
         <div class="header-content">
             <div class="animated swing brand-container">
-                <div>
+                
                     <h1 class="brand-name">Matthias</h1>
-                    <h1 class="brand-name">
-                        <span class="chevron">&lt;/</span>Goudjil<span class="chevron">&gt;</span>
-                    </h1>
-                </div>
+                    <h1 class="brand-name"><span class="chevron">&lt;/</span>Goudjil<span class="chevron">&gt;</span></h1>
                 <div>
                     <h2 class="brand-slogan">
                         <strong>Développeur Web Junior</strong>
@@ -93,18 +91,22 @@
     <section id="about">
         <h1>A propos</h1>
         <div class="about-container">
-            <img class="profil" src="assets/images/profil.jpg" alt="photo profil">
-            <div class="about-description">
-                <p>En cours de formation
-                    <strong>développeur web</strong> chez
-                    <strong>ARINFO*</strong> jusqu'au 03 août 2018.</p>
-                <p> Possibilité de poursuivre en
-                    <strong>contrat de professionnalisation</strong> (à partir de septembre 2018 - durée: 1an) débouchant sur une certification
-                    <strong>"Designer Web"</strong> (titre professionnel de niveau III (bac +2) inscrit au RNCP).</p>
-                <p>Vous etes une entreprise ou une institution et êtes intéressée par les avantages de ce type de contrat?</p>
-                <button class="contact-btn" type=button>contactez-moi!</button>
-                <p class="note">*Formation labellisée
-                    <strong>Grande Ecole du Numérique.</strong>
+
+            <div class="citation">
+                <h3><cite>Bonjour!</cite></h3>
+                <p><cite>"Passionné par les nouvelles technologies, internet et tout ce qui touche de près ou de loin à l'informatique, j'ai décidé au début de l'année 2018 d'entreprendre une reconversion professionnelle en intégrant une formation "développeur web" chez ARINFO. Cette formation intensive labellisée Grande Ecole du Numérique et orientée projets (80% de pratique), m'a permis d'acquérir de vrais compétences professionnelles adaptées à une intégration professionnelle  en tant que développeur junior ou intégrateur web."</cite></p>
+            </div>
+
+            <div class="contratpro">
+                <p>En cours de formation <strong>développeur web</strong> chez <strong>ARINFO*</strong> jusqu'au 03 août 2018.</p>
+
+                <p> Possibilité de poursuivre en <strong>contrat de professionnalisation</strong></p>
+                <p>(à partir de septembre 2018 - durée: 1an)</p>
+                <p><strong>"Designer Web"</strong> (titre professionnel de niveau III (bac +2) inscrit au RNCP.</p>
+
+                <p>Vous etes une entreprise ou une institution ?</p>
+                <a href="#contact"><button class="contact-btn" type=button>contactez-moi!</button></a>
+                <p class="note">*Formation labellisée<strong>Grande Ecole du Numérique.</strong></p>
             </div>
         </div>
     </section>
@@ -112,41 +114,42 @@
     <!-- Section Compétences -->
     <section id="skills">
         <h1>compétences</h1>
-        <div class="parallax skills-parallax">
-            <div class="skills-container ">
-                <div class="right skills-box">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>Création de sites et applications web modernes et responsives</h3>
-                    <ul>
-                        <li>-langages: HTML5/CSS3, JavaScript(ES6)/jQuery, PHP5/7,</li>
-                        <li>-CMS et librairies: Wordpress, Prestashop, Bootstrap</li>
-                    </ul>
-                </div>
-                <div class="right skills-box">
-                    <i class="fas fa-bullhorn"></i>
-                    <h3>Stratégie de communication et référencement</h3>
-                    <ul>
-                        <li>-SEO naturel</li>
-                        <li>-campagne e-mailing</li>
-                        <li>-web design (illustrator, Photoshop)</li>
-                    </ul>
-                </div>
-                <div class="left skills-box">
-                    <i class="fas fa-server"></i>
-                    <h3>environnement serveur, maintenance</h3>
-                    <ul>
-                        <li>-mise en place environnement LAMP</li>
-                        <li>-maintenance de base (mises à jour, backups)</li>
-                        <li>-mise en place de l'hébergement, création de domaines, gestion de certificats SSL</li>
-                    </ul>
-                </div>
-                <div class="left skills-box">
-                    <i class="fas fa-handshake"></i>
-                    <h3>Travail en équipe</h3>
-                    <ul>
-                        <li>-methode SCRUM Agile.</li>
-                    </ul>
-                </div>
+        <div class="skills-container ">
+            <div class="right skills-box">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Création de sites et applications web modernes et responsives</h3>
+                <ul>
+                    <li>-langages: HTML5/CSS3, JavaScript(ES6)/jQuery, PHP5/7,</li>
+                    <li>-CMS et librairies: Wordpress, Prestashop, Bootstrap, React, EXTjs, API</li>
+                </ul>
+            </div>
+            <div class="right skills-box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>Stratégie de communication et référencement</h3>
+                <ul>
+                    <li>-SEO naturel (en cours d'apprentissage)</li>
+                    <li>-campagne e-mailing</li>
+                    <li>-web design (illustrator, Photoshop)<br>(alternatives opensource: Inkscape, GIMP)</li>
+                </ul>
+            </div>
+            <div class="left skills-box">
+                <i class="fas fa-server"></i>
+                <h3>environnement serveur, maintenance</h3>
+                <ul>
+                    <li>-mise en place environnement LAMP</li>
+                    <li>-maintenance de base (mises à jour, backups)</li>
+                    <li>-mise en place de l'hébergement, création de domaines</li>
+                    <li>-gestion de certificats SSL</li>
+                    <li>-SSH</li>
+                </ul>
+            </div>
+            <div class="left skills-box">
+                <i class="fas fa-handshake"></i>
+                <h3>Travail en équipe</h3>
+                <ul>
+                    <li>-methode SCRUM Agile.</li>
+                    <li>outils collaboratifs: Git, Trello</li>
+                </ul>
             </div>
         </div>
     </section>

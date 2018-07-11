@@ -1,29 +1,51 @@
 #about {
-    padding: 0;
     background-color: rgb(255, 255, 255);
     .about-container{
         display: flex;
         flex-flow: row wrap;
         align-items: center;
-        justify-content: center;
-        .profil {
-            border-radius : 20px;
-            max-width: 250px;
-            margin: auto;      
+        justify-content: space-evenly;
+        
+        .citation{
+            margin-top: 0.5rem;       
+            min-height: 352px;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;              
+            box-shadow: 2px 2px 8px grey;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            @include breakpoint (large) {
+                text-align: justify;
+                margin: 1.5rem;
+                max-width: 45vw;
+            } //fin include
+            h3{
+                padding: 1rem;
+            }
+            cite{
+                color: rgb(94, 92, 92);
+                line-height: 1.5rem;
+                padding: 1rem;
+            }
         }
-        .about-description{           
+        .contratpro{
+            margin-top: 0.5rem;       
+            min-height: 352px;
             display: flex;
             flex-flow: column wrap;
             background-color: rgba(255, 255, 255, 0.123);
-            padding: 1rem;               
+            padding: 1rem;              
+            box-shadow: 2px 2px 8px grey;
+            justify-content: center;
+            align-items: center;
+            p{
+                text-align: center;
+            }
                 @include breakpoint (large) {
-                    max-width: 66vw;
-                    margin: auto;
+                    max-width: 45vw;
                 } //fin include
-                .note {
-                    align-self: center;
-                    padding: 0.5rem;
-                }
-        }//fin about-description
-    }
+        }//fin contratpro
+    }//fin about-container
 } //about
