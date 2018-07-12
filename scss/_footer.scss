@@ -1,6 +1,40 @@
 footer {
+    h1 {
+        margin: auto;
+        text-align: center;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 2rem;
+        color: rgb(40, 51, 63);
+    }
+    @include breakpoint (large) {
+        font-size: 1.2rem;
+    } //include
     #contact {
         
     }
     //fin contact
+    #social-networks{
+        margin-top: 1.5rem;
+        color: rgb(218, 216, 216);
+        background-color: rgb(40, 51, 63);
+        // padding: 3rem;
+        display: flex;
+        flex-flow: row wrap;
+        .icons-container{
+            font-size: 2rem;
+            margin: 3rem auto;
+            text-align: center;
+            flex-grow: 1;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+        .credits{
+            margin: 3rem auto;
+            text-align: center;
+            flex-grow: 10;
+        }
+    }
 } //fin footer

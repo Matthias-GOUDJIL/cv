@@ -96,11 +96,13 @@
         <div class="about-container">
 
             <div class="citation">
-                <h3><cite>Bonjour!</cite></h3>
-                <p><cite>"Passionné par les nouvelles technologies, internet et tout ce qui touche de près ou de loin à l'informatique, j'ai décidé au début de l'année 2018 d'entreprendre une reconversion professionnelle en intégrant une formation "développeur web" chez ARINFO. Cette formation intensive labellisée Grande Ecole du Numérique et orientée projets (80% de pratique), m'a permis d'acquérir de vrais compétences professionnelles adaptées à une intégration professionnelle  en tant que développeur junior ou intégrateur web."</cite></p>
+                <h3>Bonjour!</h3>
+                <p><cite>"Passionné par les nouvelles technologies, internet et tout ce qui touche de près ou de loin à l'informatique, j'ai décidé au début de l'année 2018 d'entreprendre une reconversion professionnelle en suivant une formation "développeur web" chez ARINFO.</cite></p>
+                <p><cite>Cette formation intensive labellisée Grande Ecole du Numérique et orientée projets (80% de pratique), m'a permis d'acquérir de vrais compétences en tant que développeur junior ou intégrateur web."</cite></p>
             </div>
 
             <div class="contratpro">
+                <h3>Actus</h3>
                 <p>En cours de formation <strong>développeur web</strong> chez <strong>ARINFO*</strong> jusqu'au 03 août 2018.</p>
 
                 <p> Possibilité de poursuivre en <strong>contrat de professionnalisation</strong></p>
@@ -109,7 +111,7 @@
 
                 <p>Vous etes une entreprise ou une institution ?</p>
                 <a href="#contact"><button class="contact-btn" type=button>contactez-moi!</button></a>
-                <p class="note">*Formation labellisée<strong>Grande Ecole du Numérique.</strong></p>
+                <p class="note">*Formation labellisée <strong>Grande Ecole du Numérique.</strong></p>
             </div>
         </div>
     </section>
@@ -174,9 +176,10 @@
     </section>
 
     <footer>
+        
+        <h1>contact</h1>
         <!-- Contact Form -->
         <section id="contact" >
-            <h1>contact</h1>
             <form class="contactform" action="contact.php" method="post">
                 <fieldset class="contact-fieldset">
                     <div>
@@ -215,9 +218,16 @@
 
                 <button id="btn-submit" type="submit" name="submit">envoyer </button>             
             </form>
-
-
         </section>
+
+        <section id="social-networks">
+            <div class="icons-container">
+                <a href="https://www.linkedin.com/in/matthias-goudjil"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Matthias-GOUDJIL"><i class="fab fa-github-square"></i></a>
+            </div>
+            <p class="credits">site développé avec <i class="fas fa-heart"></i> par - matthias goudjil - 2018</p>
+        </section>
+
     </footer>
 
     <!-- Scripts-->

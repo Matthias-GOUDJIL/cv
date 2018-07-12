@@ -13,12 +13,12 @@ section h1 {
   font-weight: 700;
   text-transform: uppercase;
   padding: 2rem;
-  color: #565d74;
+  color: #28333f;
 }
 
 @media (min-width: 768px) {
   section {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -27,6 +27,7 @@ strong {
 }
 
 p {
+  font-size: 1rem;
   padding-bottom: 1rem;
 }
 
@@ -45,10 +46,10 @@ a {
 }
 
 button {
-  border: 1px solid #565d74;
+  border: 1px solid #28333f;
   font-size: 1rem;
   color: white;
-  background-color: #565d74;
+  background-color: #28333f;
   padding: 0.5rem;
   margin: 0.5rem;
   -ms-flex-item-align: center;
@@ -57,9 +58,9 @@ button {
 }
 
 button:hover {
-  color: #565d74;
+  color: #28333f;
   background-color: white;
-  border: 1px solid #565d74;
+  border: 1px solid #28333f;
 }
 
 .parallax {
@@ -169,13 +170,12 @@ header #menu_nav .menu-content {
 }
 
 header #menu_nav .menu-content .menu-items {
-  margin: auto;
   padding: 1rem 0;
 }
 
 header #menu_nav .menu-content .menu-items .menu-link {
   padding: 1rem 0.5rem;
-  color: #424242;
+  color: #28333f;
   text-transform: uppercase;
 }
 
@@ -185,7 +185,7 @@ header #menu_nav .menu-content .menu-items .menu-link:link, header #menu_nav .me
 
 header #menu_nav .menu-content .menu-items .menu-link:hover {
   color: antiquewhite;
-  background-color: #565d74;
+  background-color: #28333f;
 }
 
 header #menu_nav .menu-content .menu-items .menu-link i {
@@ -202,7 +202,7 @@ header #menu_nav .menu-content .menu-items .menu-link i {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  background-image: url("../../assets/images/Background_Blue.jpg");
+  background: linear-gradient(45deg, #28333f, rgba(40, 51, 63, 0.904), #28333f);
   padding: 1rem;
 }
 
@@ -243,7 +243,7 @@ header #menu_nav .menu-content .menu-items .menu-link i {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  min-height: 50vh;
+  min-height: 33vh;
 }
 
 .header-content .brand-container div {
@@ -291,6 +291,10 @@ header #menu_nav .menu-content .menu-items .menu-link i {
 }
 
 #skills .skills-container {
+  background-image: url("../../assets/images/design_computer_alpha.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 5rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -315,7 +319,7 @@ header #menu_nav .menu-content .menu-items .menu-link i {
 
 #skills .skills-container .skills-box {
   color: white;
-  background: linear-gradient(45deg, #565d74, rgba(86, 93, 116, 0.699), #565d74);
+  background: linear-gradient(45deg, #28333f, rgba(40, 51, 63, 0.966), #28333f);
   min-height: 352px;
   margin: 0.5rem 0;
   -webkit-box-shadow: 5px 5px 8px #3b3b3b;
@@ -361,29 +365,6 @@ header #menu_nav .menu-content .menu-items .menu-link i {
     margin: 1rem;
     width: 33%;
     min-height: 50%;
-  }
-}
-
-#achievements {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-@media (min-width: 768px) {
-  #achievements .slider img {
-    width: 66vw;
-    margin: auto;
   }
 }
 
@@ -439,6 +420,7 @@ header #menu_nav .menu-content .menu-items .menu-link i {
 
 #about .about-container .citation h3 {
   padding: 1rem;
+  color: #424040;
 }
 
 #about .about-container .citation cite {
@@ -458,6 +440,7 @@ header #menu_nav .menu-content .menu-items .menu-link i {
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
   background-color: rgba(255, 255, 255, 0.123);
+  color: #424040;
   padding: 1rem;
   -webkit-box-shadow: 2px 2px 8px grey;
           box-shadow: 2px 2px 8px grey;
@@ -467,6 +450,10 @@ header #menu_nav .menu-content .menu-items .menu-link i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#about .about-container .contratpro h3 {
+  padding: 1rem;
 }
 
 #about .about-container .contratpro p {
@@ -572,9 +559,61 @@ header #menu_nav .menu-content .menu-items .menu-link i {
 
 #contact .contactform .captcha-container input {
   min-width: 75%;
+  line-height: 1.5rem;
+  height: 3rem;
 }
 
 #contact .contactform #btn-submit {
   padding: 1rem 10%;
+}
+
+footer h1 {
+  margin: auto;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 2rem;
+  color: #28333f;
+}
+
+@media (min-width: 768px) {
+  footer {
+    font-size: 1.2rem;
+  }
+}
+
+footer #social-networks {
+  margin-top: 1.5rem;
+  color: #dad8d8;
+  background-color: #28333f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+footer #social-networks .icons-container {
+  font-size: 2rem;
+  margin: 3rem auto;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+footer #social-networks .icons-container a {
+  text-decoration: none;
+  color: white;
+}
+
+footer #social-networks .credits {
+  margin: 3rem auto;
+  text-align: center;
+  -webkit-box-flex: 10;
+      -ms-flex-positive: 10;
+          flex-grow: 10;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -15,10 +15,10 @@ section {
         font-weight: 700;
         text-transform: uppercase;
         padding: 2rem;
-        color: rgb(86, 93, 116);
+        color: rgb(40, 51, 63);
     }
     @include breakpoint (large) {
-        font-size: 1rem;
+        font-size: 1.2rem;
     } //include
 }
 
@@ -27,6 +27,7 @@ strong {
 }
 
 p {
+    font-size: 1rem;
     padding-bottom: 1rem;
 }
 
@@ -44,17 +45,17 @@ a {
 }
 
 button {
-    border: 1px solid rgb(86, 93, 116);
+    border: 1px solid rgb(40, 51, 63);
     font-size: 1rem;
     color: rgb(255, 255, 255);
-    background-color: rgb(86, 93, 116);
+    background-color: rgb(40, 51, 63);
     padding: 0.5rem;
     margin: 0.5rem;
     align-self: center;
     &:hover {
-        color: rgb(86, 93, 116);
+        color: rgb(40, 51, 63);
         background-color: rgb(255, 255, 255);
-        border: 1px solid rgb(86, 93, 116);
+        border: 1px solid rgb(40, 51, 63);
     }
 }
     // ************ classes settings *******************************************

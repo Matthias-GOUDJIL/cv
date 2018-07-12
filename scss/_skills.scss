@@ -1,5 +1,9 @@
 #skills {
     .skills-container {
+        background-image: url('../../assets/images/design_computer_alpha.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         padding: 5rem 0;
         display: flex;
         flex-flow: column wrap;
@@ -9,7 +13,7 @@
         } //include
         .skills-box {
             color: rgb(255, 255, 255);
-            background: linear-gradient(45deg, rgb(86, 93, 116), rgba(86, 93, 116, 0.699),rgb(86, 93, 116)); 
+            background: linear-gradient(45deg, rgb(40, 51, 63), rgba(40, 51, 63, 0.966),rgb(40, 51, 63)); 
             min-height: 352px;
             margin: 0.5rem 0;
             box-shadow: 5px 5px 8px rgb(59, 59, 59);
