@@ -194,9 +194,7 @@ header #menu_nav .menu-content .menu-items .menu-link i {
   margin-right: 0.5rem;
 }
 
-.laptop-parallax {
-  background-image: url("../../assets/images/laptop.jpg");
-  min-height: 100vh;
+.header-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,87 +202,74 @@ header #menu_nav .menu-content .menu-items .menu-link i {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-}
-
-.laptop-parallax .profil {
-  max-width: 250px;
-  margin: auto;
-  -webkit-box-shadow: 5px 5px 8px black;
-          box-shadow: 5px 5px 8px black;
-}
-
-@media (max-width: 320px) {
-  .laptop-parallax .profil {
-    width: 100%;
-  }
-}
-
-.laptop-parallax .header-content {
-  margin: auto;
-  -webkit-box-shadow: 5px 5px 8px black;
-          box-shadow: 5px 5px 8px black;
-  min-height: 352px;
-  min-width: 75vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background-image: url("../../assets/images/Background_Blue.jpg");
-  opacity: 0.75;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  padding: 1rem;
 }
 
-@media (max-width: 320px) {
-  .laptop-parallax .header-content {
-    width: 100%;
-  }
+.header-content .img-container {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-@media (min-width: 768px) {
-  .laptop-parallax .header-content {
-    margin: auto;
-  }
+.header-content .img-container .profil {
+  margin: auto;
+  -webkit-box-shadow: 5px 5px 8px black;
+          box-shadow: 5px 5px 8px black;
 }
 
-.laptop-parallax .header-content .brand-container {
+.header-content .brand-container {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
   font-family: 'Inconsolata', monospace;
   color: aliceblue;
   border-top: 2.5px solid aliceblue;
   border-bottom: 2.5px solid aliceblue;
-  margin: 1rem auto;
+  margin: 5rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  min-height: 50vh;
 }
 
-.laptop-parallax .header-content .brand-container .brand-name {
+.header-content .brand-container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.header-content .brand-container div .brand-name {
+  margin: auto;
   padding: 0.5rem;
   text-align: center;
   font-size: 2rem;
 }
 
 @media (min-width: 321px) {
-  .laptop-parallax .header-content .brand-container .brand-name {
+  .header-content .brand-container div .brand-name {
     font-size: 3rem;
   }
 }
 
-.laptop-parallax .header-content .brand-container .brand-slogan {
+.header-content .brand-container .brand-slogan {
   text-align: center;
   padding: 1rem;
   text-transform: uppercase;
@@ -292,16 +277,16 @@ header #menu_nav .menu-content .menu-items .menu-link i {
 }
 
 @media (min-width: 321px) {
-  .laptop-parallax .header-content .brand-container .brand-slogan {
+  .header-content .brand-container .brand-slogan {
     font-size: 1.5rem;
   }
 }
 
-.laptop-parallax .header-content .brand-container .brand-slogan strong {
+.header-content .brand-container .brand-slogan strong {
   font-weight: 300;
 }
 
-.laptop-parallax .header-content .brand-container .chevron {
+.header-content .brand-container .chevron {
   color: #db4d4d;
 }
 

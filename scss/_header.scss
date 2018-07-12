@@ -61,50 +61,39 @@ header {
     } //fin menu-nav
 } //fin header
 
-.laptop-parallax {
-    background-image: url('../../assets/images/laptop.jpg');
-    min-height: 100vh;
+.header-content {
+    
     display: flex;
     flex-flow: row wrap;
+    background-image: url("../../assets/images/Background_Blue.jpg");
+    padding: 1rem;
     
-    .profil{
-        max-width: 250px;
-        margin: auto ;
-        box-shadow: 5px 5px 8px rgb(0, 0, 0);
-        @include breakpoint (small) {
-            width: 100%;
-        } //fin include
-    }
-    
-    .header-content {
-        margin: auto;
-        box-shadow: 5px 5px 8px rgb(0, 0, 0);
-        min-height: 352px;
-        min-width: 75vw;
+    .img-container{
+        flex-grow: 1;
         display: flex;
-        background-image: url("../../assets/images/Background_Blue.jpg");
-        opacity: 0.75;
-        justify-content: center;
-        flex-flow: row wrap;
-        @include breakpoint (small) {
-            width: 100%;
-        } //fin include
-        @include breakpoint (large) {
+        .profil{
             margin: auto ;
-        } //fin include
-        
-        
-        .brand-container {
-            font-family: 'Inconsolata', monospace;
-            color: aliceblue;
-            border-top: 2.5px solid aliceblue;
-            border-bottom: 2.5px solid aliceblue;
-            margin: 1rem auto;
+            box-shadow: 5px 5px 8px rgb(0, 0, 0);
+        }
+    }
+
+    .brand-container {
+        flex-grow: 3;
+        font-family: 'Inconsolata', monospace;
+        color: aliceblue;
+        border-top: 2.5px solid aliceblue;
+        border-bottom: 2.5px solid aliceblue;
+        margin: 5rem auto;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        min-height: 50vh;
+        div{
             display: flex;
-            flex-flow: column wrap;
-            align-items: center;
-            justify-content: center;
+            flex-flow: row wrap;
             .brand-name {
+                margin: auto;
                 padding: 0.5rem;
                 text-align: center;
                 font-size: 2rem;
@@ -112,21 +101,22 @@ header {
                     font-size: 3rem;
                 } //fin include
             } //fin brand-name
-            .brand-slogan {
-                text-align: center;
-                padding: 1rem;
-                text-transform: uppercase;
-                font-size: 1rem;
-                @include breakpoint (medium) {
-                    font-size: 1.5rem;
-                } // fin include
-                strong{
-                    font-weight: 300;
-                }
-            } //fin brand-slogan
-            .chevron {
-                color: rgb(219, 77, 77);
+        }
+        .brand-slogan {
+            text-align: center;
+            padding: 1rem;
+            text-transform: uppercase;
+            font-size: 1rem;
+            @include breakpoint (medium) {
+                font-size: 1.5rem;
+            } // fin include
+            strong{
+                font-weight: 300;
             }
-        } //fin brand-container
-    } //fin header-content
-}
+        } //fin brand-slogan
+        .chevron {
+            color: rgb(219, 77, 77);
+        }
+    } //fin brand-container
+} //fin header-content
+// }

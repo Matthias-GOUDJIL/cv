@@ -71,21 +71,24 @@
     </header>
 
     <!-- Parallax -->
-    <div class="laptop-parallax parallax">
-        <img class="profil" src="assets/images/profil.jpg" alt="photo profil">
-        <div class="header-content">
-            <div class="animated swing brand-container">
-                
-                    <h1 class="brand-name">Matthias</h1>
-                    <h1 class="brand-name"><span class="chevron">&lt;/</span>Goudjil<span class="chevron">&gt;</span></h1>
-                <div>
-                    <h2 class="brand-slogan">
-                        <strong>Développeur Web Junior</strong>
-                    </h2>
-                </div>
+    <!-- <div class="laptop-parallax parallax"> -->
+    <div class="header-content">
+        <div class="img-container">
+            <img class="profil" src="assets/images/profil.jpg" alt="photo profil">
+        </div>
+        <div class="animated swing brand-container">
+            <div>
+                <h1 class="brand-name">Matthias</h1>
+                <h1 class="brand-name"><span class="chevron">&lt;/</span>Goudjil<span class="chevron">&gt;</span></h1>
+            </div>
+            <div>
+                <h2 class="brand-slogan">
+                    <strong>Développeur Web Junior</strong>
+                </h2>
             </div>
         </div>
     </div>
+    <!-- </div> -->
     
     <!-- Section About -->
     <section id="about">
