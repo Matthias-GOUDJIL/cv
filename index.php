@@ -47,6 +47,10 @@
         <nav id="menu_nav">
             <ul class="menu-content">
                 <li class="menu-items">
+                    <a class="menu-link" href="#about">
+                        <i class="fas fa-info-circle"></i>a propos</a>
+                </li>
+                <li class="menu-items">
                     <a class="menu-link" href="#skills">
                         <i class="fas fa-cogs"></i>compétences</a>
                 </li>
@@ -54,15 +58,11 @@
                     <a class="menu-link" href="#achievements">
                         <i class="far fa-lightbulb"></i>réalisations</a>
                 </li>
-                <li class="menu-items">
-                    <a class="menu-link" href="#about">
-                        <i class="fas fa-info-circle"></i>a propos</a>
-                </li>
-                <li class="menu-items">
+                <li class="menu-items ">
                     <a class="menu-link" href="cv.pdf">
                     <i class="far fa-address-card"></i>mon cv</a>
                 </li>
-                <li class="menu-items">
+                <li class="menu-items ">
                     <a class="menu-link" href="#contact">
                         <i class="far fa-envelope"></i>contact</a>
                 </li>
@@ -225,7 +225,7 @@
                 <a href="https://www.linkedin.com/in/matthias-goudjil"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/Matthias-GOUDJIL"><i class="fab fa-github-square"></i></a>
             </div>
-            <p class="credits">site développé avec <i class="fas fa-heart"></i> par - matthias goudjil - 2018</p>
+            <p class="credits">site développé par -  matthias goudjil  - 2018  -</p>
         </section>
 
     </footer>
