@@ -29,6 +29,7 @@
     <title>matthias goudjil | développeur web</title>
     <meta name="description" content="développeur web junior résidant en vendée.
     Création d'outils numériques (sites, applications web, stratégie de communication).">
+    <meta name=Keywords content="développeur, web, développement, sites, internet, vendée, vendee, informatique, roche sur yon, roche-sur-yon, matthias goudjil">
 </head>
 
 <body>
