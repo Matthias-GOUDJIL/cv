@@ -10,6 +10,29 @@
 <html lang="fr">
 
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WZPFRKC');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Balisage JSON-LD de données structurées de Google --> 
+    <script type="application/ld+json"> {
+        "@context" : "http://schema.org",
+        "@type" : "LocalBusiness",
+        "name" : "Développeur Web Junior",
+        "image" : "https://matthias-goudjil.fr/assets/images/profil.jpg",
+        "telephone" : "06 79 70 78 54",
+        "email" : "bonjour@matthias-goudjil.fr",
+        "address" : {
+            "@type" : "PostalAddress",
+            "addressRegion" : "Vendée"
+            }
+        }
+    </script>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -33,6 +56,11 @@
 </head>
 
 <body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZPFRKC"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- Top-button-->
     <!-- <a id="arrow"><i class="fas fa-arrow-up"></i></a> -->
