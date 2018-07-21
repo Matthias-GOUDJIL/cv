@@ -127,7 +127,7 @@
             <div class="citation">
                 <h3>Bonjour!</h3>
                 <p><cite>"Passionné par les nouvelles technologies, internet et tout ce qui touche de près ou de loin à l'informatique, j'ai décidé au début de l'année 2018 d'entreprendre une reconversion professionnelle en suivant une formation "développeur web" chez ARINFO.</cite></p>
-                <p><cite>Cette formation intensive labellisée Grande Ecole du Numérique et orientée projets (80% de pratique), m'a permis d'acquérir de vrais compétences en tant que développeur junior ou intégrateur web."</cite></p>
+                <p><cite>Cette formation intensive labellisée Grande Ecole du Numérique et orientée projets (80% de pratique), m'a permis d'acquérir de vraies compétences en tant que développeur junior ou intégrateur web."</cite></p>
             </div>
 
             <div class="contratpro">
@@ -138,7 +138,7 @@
                 <p>(à partir de septembre 2018 - durée: 1an)</p>
                 <p><strong>"Designer Web"</strong> (titre professionnel de niveau III (bac +2) inscrit au RNCP.</p>
 
-                <p>Vous etes une entreprise ou une institution ?</p>
+                <p>Vous êtes une entreprise ou une institution ?</p>
                 <a href="#contact"><button class="contact-btn" type=button>contactez-moi!</button></a>
                 <p class="note">*Formation labellisée <strong>Grande Ecole du Numérique.</strong></p>
             </div>
@@ -182,7 +182,7 @@
                 <h3>Travail en équipe</h3>
                 <ul>
                     <li>-methode SCRUM Agile.</li>
-                    <li>outils collaboratifs: Git, Trello</li>
+                    <li>-outils collaboratifs: Git, Trello</li>
                 </ul>
             </div>
         </div>
