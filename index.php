@@ -1,4 +1,4 @@
-<?php 
+<?php
     session_start();
     function verifyInput($var){
         $var = trim($var);
@@ -27,7 +27,7 @@
     })(window,document,'script','dataLayer','GTM-WZPFRKC');</script>
     <!-- End Google Tag Manager -->
 
-    <!-- Balisage JSON-LD de données structurées --> 
+    <!-- Balisage JSON-LD de données structurées -->
     <script type="application/ld+json"> {
         "@context" : "http://schema.org",
         "@type" : "LocalBusiness",
@@ -74,9 +74,9 @@
     <!-- Top-button-->
     <!-- <a id="arrow"><i class="fas fa-arrow-up"></i></a> -->
     <a id="arrow"><i class="fas fa-angle-up"></i></a>
-  
 
-    <header>       
+
+    <header>
         <!-- Navigation-toggler-->
         <button id="menu_toggler" class="hide" type="button">
             <i class="fas fa-bars"></i>
@@ -127,7 +127,7 @@
         </div>
     </div>
     <!-- </div> -->
-    
+
     <!-- Section About -->
     <section id="about">
         <h1>A propos</h1>
@@ -162,36 +162,36 @@
                 <i class="fas fa-mobile-alt"></i>
                 <h3>Création de sites et applications web modernes et responsives</h3>
                 <ul>
-                    <li>-langages: HTML5/CSS3, JavaScript(ES6)/jQuery, PHP5/7,</li>
-                    <li>-CMS et librairies: Wordpress, Prestashop, Bootstrap, React, EXTjs, API</li>
+                    <li>- langages: HTML5/CSS3, JavaScript(ES6)/jQuery, PHP5/7,</li>
+                    <li>- CMS et librairies: Wordpress, Prestashop, Bootstrap, React, EXTjs, API</li>
                 </ul>
             </div>
             <div class="right skills-box">
                 <i class="fas fa-bullhorn"></i>
                 <h3>Stratégie de communication et référencement</h3>
                 <ul>
-                    <li>-SEO naturel (en cours d'apprentissage)</li>
-                    <li>-campagne e-mailing</li>
-                    <li>-web design (illustrator, Photoshop)<br>(alternatives opensource: Inkscape, GIMP)</li>
+                    <li>- SEO naturel (en cours d'apprentissage)</li>
+                    <li>- campagne e-mailing</li>
+                    <li>- web design (illustrator, Photoshop)<br>(alternatives opensource: Inkscape, GIMP)</li>
                 </ul>
             </div>
             <div class="left skills-box">
                 <i class="fas fa-server"></i>
                 <h3>environnement serveur, maintenance</h3>
                 <ul>
-                    <li>-mise en place environnement LAMP</li>
-                    <li>-maintenance de base (mises à jour, backups)</li>
-                    <li>-mise en place de l'hébergement, création de domaines</li>
-                    <li>-gestion de certificats SSL</li>
-                    <li>-SSH</li>
+                    <li>- mise en place environnement LAMP</li>
+                    <li>- maintenance de base (mises à jour, backups)</li>
+                    <li>- mise en place de l'hébergement, création de domaines</li>
+                    <li>- gestion de certificats SSL</li>
+                    <li>- SSH</li>
                 </ul>
             </div>
             <div class="left skills-box">
                 <i class="fas fa-handshake"></i>
                 <h3>Travail en équipe</h3>
                 <ul>
-                    <li>-methode SCRUM Agile.</li>
-                    <li>-outils collaboratifs: Git, Trello</li>
+                    <li>- methode SCRUM Agile.</li>
+                    <li>- outils collaboratifs: Git, Trello</li>
                 </ul>
             </div>
         </div>
@@ -214,7 +214,7 @@
     </section>
 
     <footer>
-        
+
         <h1>contact</h1>
         <!-- Contact Form -->
         <section id="contact" >
@@ -223,7 +223,7 @@
                     <div>
                         <input type="text" name="lastname" id="lastname" placeholder="votre nom" value="<?= isset($_SESSION['inputs']['lastname']) ? verifyInput($_SESSION['inputs']['lastname']) : ''; ?>">
                     </div>
-                    
+
                     <div>
                         <input type="text" name="firstname" id="firstname" placeholder="votre prénom" value="<?= isset($_SESSION['inputs']['firstname']) ? verifyInput($_SESSION['inputs']['firstname']) : ''; ?>">
                     </div>
@@ -232,13 +232,13 @@
                     </div>
                     <div>
                         <input type="text" name="subject" id="subject" placeholder="sujet" value="<?= isset($_SESSION['inputs']['subject']) ? verifyInput($_SESSION['inputs']['subject']) : ''; ?>">
-                    </div>                    
+                    </div>
                 </fieldset>
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="votre message"><?= isset($_SESSION['inputs']['message']) ? verifyInput($_SESSION['inputs']['message']) : ''; ?></textarea>
-                
+
                 <div class="captcha-container">
                     <img src="captcha.php" alt="captcha">
-                    <input type="text" name="captcha" id="captcha" placeholder="Entrez le NOMBRE indiqué" value="<?= isset($_SESSION['inputs']['captcha']) ? verifyInput($_SESSION['inputs']['captcha']) : ''; ?>">                
+                    <input type="text" name="captcha" id="captcha" placeholder="Entrez le NOMBRE indiqué" value="<?= isset($_SESSION['inputs']['captcha']) ? verifyInput($_SESSION['inputs']['captcha']) : ''; ?>">
                 </div>
 
                 <?php if (array_key_exists('errors',$_SESSION)): ?>
@@ -246,7 +246,7 @@
                         <?= implode('<br>', $_SESSION['errors']); ?>
                     </div>
                 <?php unset($_SESSION['errors']); endif; ?>
-    
+
                 <?php if (array_key_exists('success',$_SESSION)): ?>
                     <div class="success-submit">
                         Votre email a bien été envoyé! Je vous répondrai dans les plus brefs délais. Merci de votre visite et à bientôt!
@@ -254,7 +254,7 @@
                 <?php unset($_SESSION['success']); endif; ?>
 
 
-                <button id="btn-submit" type="submit" name="submit">envoyer </button>             
+                <button id="btn-submit" type="submit" name="submit">envoyer </button>
             </form>
         </section>
 
@@ -278,7 +278,7 @@
 
 </html>
 
-<?php 
+<?php
 unset($_SESSION['inputs']);
 unset($_SESSION['success']);
 unset($_SESSION['errors']);
